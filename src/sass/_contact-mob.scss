@@ -1,0 +1,33 @@
+.contact {
+    width: 320px;
+    background-image: linear-gradient(
+    to right, 
+    #E5E5E5 302px, 
+    #FFF5F6 1144px);   
+}
+
+.agency-list {
+    list-style: none;
+}
+.agency-item {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px 0px #D414431A;
+
+}
+.agency-name {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #ffff;
+    width: 80px;
+    height: 16px;
+    background-color: #F0D1A5;
+    border-radius: 6px;
+
+}
+
