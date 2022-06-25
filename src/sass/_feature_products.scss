@@ -2,27 +2,81 @@
     background-color: rgba(255, 255, 255, 1);
     padding: 60px 20px;
 }
-// .container {
-// }
-// .products__box {
-// }
+
+.products__box {
+    padding: 0 40px;
+}
+
 .products__label {
-    font-family: 'Titan One';
+    padding-left: 28px;
+
+    font-family: $accentTextFont;
     font-size: 18px;
     line-height: 1.17;
-    text-align: center;
     text-transform: uppercase;
-    color: #FFA5BA;
-
-    margin-bottom: 15px;
+    color: $mainThemeColor;
 }
 
 .products__title {
+    margin-top: 15px;
+
     font-family: 'Titan One';
     font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primaryAccentColor;
+}
+
+.products__list {
+    margin-top: 8px;
+}
+
+.products__item {
+    padding: 20px 40px 40px 40px;
+    border-radius: 25px;
+
+    &--pink {
+        background-color: $mainThemeColor;
+    }
+
+    &--mokko {
+        background-color: #F0D1A5;
+    }
+
+    &--green {
+        background-color: #C2E297;
+    }
+}
+
+.products__subtitle {
+    font-family: $accentTextFont;
+    font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+    color: $contrastTextColor;
+}
+
+.products__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $contrastTextColor;
+}
+
+.products__button {
+    @include Flex (Flex, center, center);
+    margin-top: 32px;
+    width: 40px;
+    height: 40px;
+    
+    cursor: pointer;
+    background-color: $contrastTextColor;
+    
+    border: 1px solid transparent;
+    border-radius: 50%;
 }
