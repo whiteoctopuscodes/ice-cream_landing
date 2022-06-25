@@ -1,11 +1,12 @@
 
 
 <main>
-<section class="contact">
+<section class="contact">  
     <h1 class="hidden" hidden>Contacts</h1>
+    <div class="contact__conteiner">
         <ul class="agency-list">
             <li class="agency-item">
-                <p class="agency-name">CAFE</p>
+                <button class="agency-name" type="button">CAFE</button>
                     <ul class="info-list">
                         <li class="info-item">
                             <h3 class="sity-name">Chicago</h3>
@@ -25,7 +26,7 @@
             </li>
 
             <li class="agency-item">
-                <p class="footruck-name">FOODTRUCK</p>
+                <button class="footruck-name" type="button">FOODTRUCK</button>
                     <ul class="info-list">
                         <li class="info-item">
                             <h3 class="sity-name">Los Angeles</h3>
@@ -45,7 +46,7 @@
                 
             </li>
             <li class="agency-item">
-                <p class="agency-name">CAFE</p>
+                <button class="agency-name" type="button">CAFE</button>
                     <ul class="info-list">
                         <li class="info-item">
                             <h3 class="sity-name">New York</h3>
@@ -67,7 +68,7 @@
         <button class="location-btn" type="button" data-modal-open>Our Locations
             <svg class="vector" width="8" height="8">
 <defs>
-                <use href="../images/sptite_btn.svg#icon-Vector-1-1"></use>
+                <use href="./images/sprite_btn.svg#icon-Vector-1-1"></use>
             </svg>
         </button>
         <div class="backdrop is-hidden" data-modal>
@@ -75,7 +76,7 @@
             <div class="modal-wrapper">
               <button class="modal-btn" data-modal-close>
                 <svg class="modal-btn__icon" width="18" height="18">
-                  <use href="../images/sptite_btn.svg#icon-close-black-18dp-2-1-1"></use>
+                  <use href="./images/sprite_btn.svg#icon-close-black-18dp-2-1-1"></use>
                 </svg>
               </button>
         </div>
@@ -87,7 +88,7 @@
             <div class="modal-wrapper">
                 <button class="modal-btn" data-modal-close>
                   <svg class="modal-btn__icon" width="18" height="18">
-                    <use href="../images/sptite_btn.svg#icon-close-black-18dp-2-1-1"></use>
+                    <use href="./images/sprite_btn.svg#icon-close-black-18dp-2-1-1"></use>
                   </svg>
                 </button>
           </div>
@@ -99,7 +100,7 @@
                   <label for="name" class="form-field__label">Имя</label>
                   <input type="text" class="form-field__input" name="name" id="name">
                   <svg width="18" height="18" class="form-field__icon">
-                    <use href="../images/sprite_form.svg#icon-person"></use>
+                    <use href="./images/sprite_form.svg#icon-person"></use>
                   </svg>
                 </div>
 
@@ -107,7 +108,7 @@
                   <label for="tel" class="form-field__label">Телефон</label>
                   <input type="tel" class="form-field__input" name="name" id="tel">
                   <svg width="18" height="18" class="form-field__icon">
-                    <use href="../images/sprite_form.svg#icon-phone"></use>
+                    <use href="./images/sprite_form.svg#icon-phone"></use>
                   </svg>
                 </div>
 
@@ -116,7 +117,7 @@
                   <input type="email" class="form-field__input" name="name" id="email">
                   <svg width="18" height="18" class="form-field__icon">
                     <use
-                      href="../images/sprite_form.svg#icon-email">
+                      href="./images/sprite_form.svg#icon-email">
                     </use>
                   </svg>
                 </div>
@@ -130,6 +131,7 @@
                 <button type="submit" class="btn-primary btn-primary--submit">Отправить</button>
               </form>
             </div>
+    </div>
 </section>
 
 
