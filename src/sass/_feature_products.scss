@@ -29,13 +29,14 @@
 }
 
 .products__list {
-    margin-top: 8px;
+    margin-top: 148px;
 }
 
 .products__item {
-    padding: 20px 40px 40px 40px;
-    border-radius: 25px;
-
+    position: relative;
+    padding: 160px 40px 40px 40px;
+    border-radius: 24px;
+ 
     &--pink {
         background-color: $mainThemeColor;
     }
@@ -47,6 +48,40 @@
     &--green {
         background-color: #C2E297;
     }
+
+    &:not(:first-child) {
+        margin-top: 140px;
+    }
+
+    &:first-child::before {
+        content: '';
+        position: absolute;
+        top: -140px;
+        left: -10px;
+        background-image: url('../images/bcg-products/ice-cream-sm.png');
+        height: 280px;
+        width: 100%;
+    }
+
+    &:nth-of-type(2)::before {
+        content: '';
+        position: absolute;
+        top: -140px;
+        left: -10px;
+        background-image: url('../images/bcg-products/ice-coffee-sm.png');
+        height: 280px;
+        width: 100%;
+    }
+
+    &:last-child::before {
+        content: '';
+        position: absolute;
+        top: -140px;
+        left: -10px;
+        background-image: url('../images/bcg-products/milkshakes-sm.png');
+        height: 280px;
+        width: 100%;
+    }
 }
 
 .products__subtitle {
@@ -57,9 +92,23 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $contrastTextColor;
+
+    &::after {
+        content: '. . .';
+        color: $contrastTextColor;
+        position: absolute;
+        top: 205px;
+        left: 110px;
+        // display: block;
+        // width: 6px;
+        // height: 6px;
+        // border-radius: 50%;
+        // background-color: $contrastTextColor;
+    }
 }
 
 .products__description {
+    margin-top: 70px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
@@ -70,6 +119,7 @@
 
 .products__button {
     @include Flex (Flex, center, center);
+    margin: 0 auto;
     margin-top: 32px;
     width: 40px;
     height: 40px;
@@ -79,4 +129,13 @@
     
     border: 1px solid transparent;
     border-radius: 50%;
+
+    & .products__icon {
+        fill: $primaryAccentColor;
+    }
+
+    &:hover, 
+    &:focus {
+        background-color: #ECEBEB;
+    }
 }
