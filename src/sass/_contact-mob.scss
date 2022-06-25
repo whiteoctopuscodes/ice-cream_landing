@@ -9,7 +9,10 @@
         
     .contact {
         width: 100%;
-        background-image: linear-gradient(to bottom, $primaryBackground 362px, $secondaryBackground 974px);
+        background-image: linear-gradient(
+        to bottom, 
+       #ffffff 362px, 
+        $secondaryBackground 362px);
         padding-top: 60px;  
         padding-left: 20px;  
         padding-right: 20px;      
@@ -161,8 +164,11 @@
 
     //// button///
     
+    /// location///
+    
     .button {
         display: block;  
+        align-items: center;
         justify-content: center;
     }
     .location-btn {
@@ -184,10 +190,10 @@
     &__vector {
         fill: $contrastTextColor;
         margin-right: 8px;
-        size: contain;
+        background-size: contain;
     }
-    .location-btn:hover &__vector,
-    .location-btn:focus &__vector {
+    &:hover &__vector,
+    &:focus &__vector {
         background-color: #FFFFFF;
         color: $primaryAccentColor;
         fill: $primaryAccentColor;
@@ -196,8 +202,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 100px;
+        height: 100px;
       
         background-color: rgba(0, 0, 0, 0.2);  
         z-index: 1000;  
@@ -209,9 +215,10 @@
         visibility: hidden;
      }  
     &__backdrop.is-hidden &__modal-wrapper {
-        transform: translate(-50%, -50%) scale(0.1);
+        transform: translate(-50%, -50%);
       }
      &__modal-wrapper {
+        position: relative;
         max-width:250px;
         height: auto;
         padding-top: 40px;
@@ -224,11 +231,140 @@
         left: 50%;
         width: 528px;
         background-image: url(/images/mapdata.jpg);
+        background-size: cover;
       }
+      &__modal-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #FFA5BA;      
+      border-radius: 50%;
+
+      }      
     
     }
+     ///form///
+     .form-btn {
+        width: 161.45px;
+        height: 44;
+        margin: 0;
+        background-color: #FFFFFF;
+        border-radius: 22px;
+        color: $primaryAccentColor;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.31;
+        letter-spacing: 0em;
+        text-align: center;
     
+    &__vector {
+        fill: $primaryAccentColor;
+        margin-right: 8px;
+        background-size: contain;
+    }
+    &:hover &__vector,
+    &:focus &__vector {
+        background-color: $primaryAccentColor;
+        color: $contrastTextColor;
+        fill: $contrastTextColor;
+    }   
+     &__backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      
+        background-color: rgba(0, 0, 0, 0.2);  
+        z-index: 1000;  
+        overflow: scroll;
+      }
     
+     &__backdrop.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;     
+      }
+      
+      &__backdrop.is-hidden &__modal-wrapper {
+        transform: translate(-50%, -50%) scale(0.1);
+      }
+      &__modal-wrapper {
+        max-width:250px;
+        height: auto;
+        padding-top: 40px;
+        padding-right: 39px;
+        padding-bottom: 40px;
+        padding-left: 41px;
+      
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 528px;
+        background-color: white;
+      }
+      &__modal-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #FFA5BA;
+        border-radius: 50%;
+  
+        }   
+    }
+      .form-registration {
+        color: $mainHeadercolor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.83;
+        letter-spacing: 0.04em;
+        text-align: center;
+      }
+      .form-field {
+        position: relative;
+        margin-bottom: 10px;
+            
+      &:last-child {
+        margin-bottom: 20px;
+      }
+      &__icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+      }
+      &__label {
+        display: block;
+        color:$mainTextColor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 4px;
+      }    
+    }   
+   .btn-primary {
+    width: 161.45px;
+    height: 44;  
+    margin-top: 32px;
+    margin-bottom: 10px;
 
-
+    background-color: $primaryAccentColor;
+    border: none;
+    border-radius: 22px;
+    color: $contrastTextColor;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.31;
+    letter-spacing: 0em;
+    text-align: center; 
+   }
 }
