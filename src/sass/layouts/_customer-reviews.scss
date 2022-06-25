@@ -1,0 +1,72 @@
+.carousel {
+  position: relative;
+  margin: 0 auto;
+}
+.carousel__track-container {
+  background-color: orange;
+}
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.carousel__slide {
+  //   position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 200px;
+}
+.carousel__button--prev {
+  left: -30px;
+}
+.carousel__button--next {
+  right: -50px;
+}
+.carousel__nav {
+  background: pink;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: black;
+  margin: 0 12px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel__indicator.current-slide {
+  background: rgba($color: #c7133e, $alpha: 0.8);
+}
+.slider__image {
+  text-align: center;
+}
+
+.slider__area {
+  padding: 30px 50px 17px 50px;
+  background-color: #fafafa;
+}
+.slider__comment {
+  background-image: url(../images/icons/marks.svg),
+    repeating-linear-gradient(
+      to bottom,
+      #e1e1e1,
+      #e1e1e1 1px,
+      #fafafa 1px,
+      #fafafa 30px
+    );
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,133 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container {
+  min-width: 0px;
+  max-width: 319px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+  }
+}
+
+.carousel {
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel__track-container {
+  background-color: orange;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel__slide {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 200px;
+}
+
+.carousel__button--prev {
+  left: -30px;
+}
+
+.carousel__button--next {
+  right: -50px;
+}
+
+.carousel__nav {
+  background: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: black;
+  margin: 0 12px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel__indicator.current-slide {
+  background: rgba(199, 19, 62, 0.8);
+}
+
+.slider__image {
+  text-align: center;
+}
+
+.slider__area {
+  padding: 30px 50px 17px 50px;
+  background-color: #fafafa;
+}
+
+.slider__comment {
+  background-image: url(../images/icons/marks.svg), repeating-linear-gradient(to bottom, #e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 30px);
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=index.css.map */
