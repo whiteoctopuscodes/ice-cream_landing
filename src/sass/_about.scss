@@ -1,0 +1,83 @@
+.about {
+    background-color:$secondaryBackground;
+}
+
+.about__label {
+    display: block;
+    font-family:$accentTextFont;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+
+text-align: center;
+text-transform: uppercase;
+
+color:$secondaryAccentColor;
+margin-bottom: 15px;
+}
+
+.about__title {
+    font-family:$accentTextFont;
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 39px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+margin-bottom: 32px;
+
+color:$primaryAccentColor;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about_img {
+    margin-bottom: 40px;
+}
+
+.about__description {
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 162%;
+color:$mainHeadercolor;
+margin-bottom: 40px;
+}
+
+.about__paragraph {
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 162%;
+color:$mainTextColor;
+margin-bottom: 40px;
+}
+
+.about__btn {
+    width: 176px;
+    height: 44px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 37px;
+    padding-right: 56px;
+    color:$primaryAccentColor;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    border: none;
+    }
