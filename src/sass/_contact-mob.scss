@@ -1,0 +1,199 @@
+@media screen and (max-width: 767.9px) {
+
+    .list {
+        list-style: none;
+    }
+    h1, h2, h3 {
+        margin: 0;
+    }
+        
+    .contact {
+        width: 100%;
+        background-color: $secondaryBackground;        
+        background-position-x: 0; 
+        background-position-y: 362px;
+    
+    
+    &__conteiner {
+        display: block;
+    }
+    &__agency-list {
+        list-style: none;
+    }
+    &__agency-item {    
+        width: 100%;
+        margin-left: 20px;   
+        margin-right: 20px; 
+        margin-top: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 32px;
+        
+        border: 1px transparent;   
+        box-shadow: 0px 8px 30px 0px #D414431A;
+    }
+    &__agency-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    
+    &__agency-name {       
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.83;
+        letter-spacing: 0.04em;
+        text-align: center;   
+        color: $contrastTextColor;   
+
+        width: 80px;
+        height: 16px;
+        margin: 0;
+        padding: 0;
+        background-color: #F0D1A5;
+        border: transparent;
+        border-radius: 4px;
+    }
+    &__footruck-name {
+        color: $contrastTextColor;  
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.83;
+        letter-spacing: 0.04em;
+        text-align: center;
+    
+        width: 130px;
+        height: 16px;
+        margin: 0;
+        padding: 0;
+        background-color: #C2E297;
+
+        border: transparent;
+        border-radius: 4px;
+    }
+    }
+    
+    .info-list {
+        &__info-item {
+            display: block;
+            width: 179px;            
+            margin-top: 24px;            
+            margin-left: 0; 
+            text-decoration: none;    
+        }
+        &__info-item:not(:last-child) {
+            margin-bottom: 24px;
+            border-bottom: 1px solid #E1E1E1;
+        }
+        &__info-item:first-child {
+            margin-bottom: 20px;            
+        }
+    }
+    .sity-name {
+        color: $mainHeadercolor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.83;
+        letter-spacing: 0.04em;
+        text-align: left;
+
+        margin-bottom: 8px;
+    }
+    .commit {
+        color:$mainTextColor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        text-align: left;        
+    }
+    .day-info {
+        color: $mainHeadercolor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.83;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;        
+    }
+    .time-info {
+        color: #FFA5BA;       
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.83;
+        letter-spacing: 0em;
+        text-align: left;
+        
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    .tell-info {
+        color:$mainTextColor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+    }
+    .mail-info {
+        color:$mainTextColor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+    }
+
+.location-btn {
+    width: 161.45px;
+    height: 44;  
+    margin-bottom: 10px;
+    background-color: $primaryAccentColor;
+    border-radius: 22px;
+    color: $contrastTextColor;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.31;
+    letter-spacing: 0em;
+    text-align: center;
+
+&__vector {
+    fill: $contrastTextColor;
+    margin-right: 8px;
+}
+.location-btn:hover &__vector,
+.location-btn:focus &__vector {
+    background-color: #FFFFFF;
+    color: $primaryAccentColor;
+    fill: $primaryAccentColor;
+}
+}
+.form-btn {
+    width: 161.45px;
+    height: 44;
+    margin: 0;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    color: $primaryAccentColor;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.31;
+    letter-spacing: 0em;
+    text-align: center;
+
+&__vector {
+    fill: $primaryAccentColor;
+    margin-right: 8px;
+}
+.form-btn:hover &__vector,
+.form-btn:focus &__vector {
+    background-color: $primaryAccentColor;
+    color: $contrastTextColor;
+    fill: $contrastTextColor;
+}
+}
+/// modal ///
+
+
+
+}
