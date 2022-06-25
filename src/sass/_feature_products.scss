@@ -20,7 +20,7 @@
 .products__title {
     margin-top: 15px;
 
-    font-family: 'Titan One';
+    font-family: $accentTextFont;
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -57,30 +57,60 @@
         content: '';
         position: absolute;
         top: -140px;
-        left: -10px;
-        background-image: url('../images/bcg-products/ice-cream-sm.png');
+        left: 0;
         height: 280px;
         width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../images-products/bcg-products/ice-cream-sm.png');
+        background-image: url('../images-products/bcg-products/ice-cream-sm.webp') 1x;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images-products/bcg-products/ice-cream-sm1@2x.png');
+
+        background-image: url('../images-products/bcg-products/ice-cream-sm1@2x.webp') 2x;
+    }
     }
 
     &:nth-of-type(2)::before {
         content: '';
         position: absolute;
         top: -140px;
-        left: -10px;
-        background-image: url('../images/bcg-products/ice-coffee-sm.png');
+        left: 0;
         height: 280px;
         width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../images-products/bcg-products/ice-coffee-sm.png');
+        background-image: url('../images-products/bcg-products/ice-coffee-sm.webp') 1x;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images-products/bcg-products/ice-coffee-sm@2x.png');
+
+        background-image: url('../images-products/bcg-products/ice-coffee-sm@2x.webp') 2x;
+    }
     }
 
     &:last-child::before {
         content: '';
         position: absolute;
         top: -140px;
-        left: -10px;
-        background-image: url('../images/bcg-products/milkshakes-sm.png');
+        left: 0;
         height: 280px;
         width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../images-products/bcg-products/milkshakes-sm.png');
+        background-image: url('../images-products/bcg-products/milkshakes-sm.webp');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images-products/bcg-products/milkshakes-sm@2x.png');
+
+        background-image: url('../images-products/bcg-products/milkshakes-sm@2x.webp') 2x;
+    }
     }
 }
 
