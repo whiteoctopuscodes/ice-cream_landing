@@ -1,67 +1,75 @@
 .customer-reviews {
   margin-bottom: 60px;
-}
-.customer-reviews__container {
-  overflow: hidden;
-}
-.customer-reviews__area {
-  display: flex;
-  transition: 0.2s;
-}
-.customer-reviews__comment-zone {
-  text-align: center;
-  min-width: 320px;
-  height: 100%;
 
-  @include ice(desktop) {
-    min-width: 1160px;
+  &__container {
+    overflow: hidden;
   }
-  @include ice(tablet) {
-    min-width: 728px;
-  }
-}
-.customer-reviews__photo {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 32px;
-}
-.customer-reviews__background {
-  background-color: #fafafa;
-  padding: 30px 50px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(./images/sprite.svg#marks);
-}
-.customer-reviews_comment {
-  background-image: repeating-linear-gradient(
-    to bottom,
-    #e1e1e1,
-    #e1e1e1 1px,
-    #fafafa 1px,
-    #fafafa 30px
-  );
 
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 255%;
-}
-.customer-reviews__name {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 186%;
-}
-.customer-reviews__slider {
-  text-align: center;
-  min-width: 320px;
-
-  @include ice(desktop) {
-    min-width: 1160px;
+  &__area {
+    display: flex;
+    transition: 0.2s;
   }
-  @include ice(tablet) {
-    min-width: 728px;
+
+  &__comment-zone {
+    text-align: center;
+    min-width: 320px;
+    height: 100%;
+
+    @include ice(desktop) {
+      min-width: 1160px;
+    }
+    @include ice(tablet) {
+      min-width: 728px;
+    }
+  }
+
+  &__photo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+
+  &__background {
+    background-color: #fafafa;
+    padding: 30px 50px;
+  }
+
+  &_comment {
+    background-image: url(../images/customers/icon/marks.svg),
+      repeating-linear-gradient(
+        to bottom,
+        #e1e1e1,
+        #e1e1e1 1px,
+        #fafafa 1px,
+        #fafafa 30px
+      );
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    padding-left: 44px;
+    padding-right: 15px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+  }
+
+  &__slider {
+    text-align: center;
+    min-width: 320px;
+
+    @include ice(desktop) {
+      min-width: 1160px;
+    }
+    @include ice(tablet) {
+      min-width: 728px;
+    }
   }
 }
 
@@ -79,6 +87,7 @@
     background-color: #c7133e;
   }
 }
+
 .slider-icon {
   fill: currentColor;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);

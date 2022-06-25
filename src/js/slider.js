@@ -8,10 +8,20 @@ $(document).ready(function () {
     const btnPrev = $(`btn-previous`);
     const btnNext = $(`btn-next`);
     const itemWidth = container.width() / slidesToShow;
+    const movePosition = slidesToScroll * itemWidth;
 
     item.each(function (index, item) {
         $(item).css({
             minWidth: itemWidth,
         });
+    });
+    btnPrev.click(function () {
+        console.log(`btn-previous`);
+        area.css({
+            transform: `translateX(${movePosition}px)`
+        });
+    });
+    btnNext.click(function () {
+        console.log(`btn-next`);
     });
 });
