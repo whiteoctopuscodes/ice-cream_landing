@@ -156,7 +156,9 @@
 .location-btn {
     width: 161.45px;
     height: 44;  
+    margin-top: 32px;
     margin-bottom: 10px;
+
     background-color: $primaryAccentColor;
     border-radius: 22px;
     color: $contrastTextColor;
@@ -220,11 +222,8 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-  
-    transition: 250ms $transition-cubic;
-  }
-  
-  .location-btn__backdrop.is-hidden .location-btn__modal-wrapper {
+ }  
+.location-btn__backdrop.is-hidden .location-btn__modal-wrapper {
     transform: translate(-50%, -50%) scale(0.1);
   }
   .location-btn__modal-wrapper {
@@ -239,7 +238,7 @@
     top: 50%;
     left: 50%;
     width: 528px;
-    background-color: white;
+    background-image: url(/images/mapdata.jpg);
   }
 
   // modal 2//
@@ -301,7 +300,6 @@
     top: 50%;
     left: 12px;
   }
-  
   .form-field__label {
     display: block;
     color:$mainTextColor;
