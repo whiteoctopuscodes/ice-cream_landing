@@ -1,3 +1,53 @@
-<header>
+<header class="header section" >
+    <div class="container position">
+        <!-- логотип -->
+        <a class="logo logo__position" href="./index.html">
+            <img src="/src/images/hero-header/logo.png" alt="Company`s logo iceCream" />
+        </a>
     
+        <!-- кнопки мобильного меню -->
+        <button type="button" class="menu-button menu-button__position" data-modal-open>
+            <svg width="20" height="14">
+                <use href="/src/images/hero-header/icons.svg#burger"></use>
+            </svg>
+        </button>
+    
+        <!-- кнопка buy now планшет + десктоп -->
+        
+            <!-- стрелка в кнопке -->
+    </div>
 </header>
+<section class="section-hero">
+    <div class="container hero">
+        <div >
+            <div class="container-title">
+                <h1 class="hero__title">
+                    ice cream made with <span class="hero__title--change-color">passion</span>
+                </h1>
+            </div>
+            <ul class="hero__list">
+                <li class="hero__products">
+                    <a class="hero__products-link hero__link" href="#products">Products</a>
+                </li>
+                <li class="hero__about">
+                    <a class="hero__about-link hero__link" href="#about">How it’s made?</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Добавляю фото молока с учетом адаптивности и качесвта для ретины -->
+     
+        <div class="ice-cream">
+            <picture>
+                <source srcset="./images/hero-header/mobile/iceCream.png 1x, ./images/hero-header/mobile/iceCream@2x.png 2x"
+                    media="(min-width: 480px)" type="image/png" />
+                <img src="./images/hero-header/mobile/icecream.png" alt="Ice cream in a waffle cone" />
+            </picture>
+        </div>
+        
+   
+            <!-- Добавляю фото tasty с учетом адаптивности и качества для ретины -->
+            
+         
+        </div>
+    </div>
+</section>

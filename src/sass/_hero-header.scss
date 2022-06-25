@@ -1,0 +1,266 @@
+.header {
+  padding-top: 6px;
+  background-color: $mainThemeColor;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.position {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo__position {
+  margin-right: auto;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &__position {
+    @media screen and (min-width: 768px) {
+      margin-right: 30px;
+    }
+  }
+}
+
+// Контейнер Hero
+.section-hero {
+  background-color: $mainThemeColor;
+}
+
+.hero {
+  position: relative;
+  padding-top: 136px;
+  overflow: hidden;
+  background-image: url(/src/images/hero-header/circle.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 64px) 27px;
+
+  // ======== размещение круга в герое
+  @media screen and (min-width: 768px) {
+    background-size: 324px 322px;
+    background-position: calc(100% - 103px) 0;
+
+    // верхний паддинг плюс отрицательный маржин 15+56=71px
+    padding-top: 71px;
+    // отрицательный маржин 87-31=56px
+    margin-top: -56px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-size: 538px 538px;
+    background-position: calc(100% - 170px) 0;
+    // верхний паддинг плюс отрицательный маржин 84+35=119px
+    padding-top: 119px;
+    // отрицательный маржин
+    margin-top: -35px;
+  }
+
+  // ======= Стили заголовка, нижний отступ от заголовка к ссылкам
+  &__title {
+    position: relative;
+    font-family: $accentTextFont;
+    font-size: 26px;
+    line-height: 1.153;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $contrastTextColor;
+    margin-bottom: 19px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      // уменьшен размер на 3 пикселя
+      font-size: 35px;
+      line-height: 1.157;
+      margin-bottom: 25px;
+    }
+
+    // Стиль span заголовка "Passion"
+    &--change-color {
+      font-size: 48px;
+      line-height: 0.95;
+      color: $primaryAccentColor;
+
+      @media screen and (min-width: 768px) {
+        font-size: 34px;
+        line-height: 0.91;
+      }
+
+      @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        line-height: 0.91;
+      }
+    }
+  }
+
+  // ======= Список ссылок заголовка
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+    margin-bottom: 160px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 19px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 56px;
+    }
+  }
+
+  // ======= Стили ссылок, общие
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 8px;
+    line-height: 1.25;
+    border-radius: 20px;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.285;
+    }
+  }
+
+  // ======= Ссылка Products
+  &__products {
+    width: 62px;
+    height: 24px;
+    margin-right: 8px;
+
+    @media screen and (min-width: 1280px) {
+      width: 104px;
+      height: 40px;
+      margin-right: 15px;
+    }
+  }
+
+  // ======= Стиль ссылки Product
+  &__products-link {
+    background-color: $primaryAccentColor;
+    color: $contrastTextColor;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier (0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+      background-color: #c7133e;
+    }
+  }
+
+  // ======= Ссылка About
+  &__about {
+    width: 83px;
+    height: 24px;
+
+    @media screen and (min-width: 1280px) {
+      width: 138px;
+      height: 40px;
+    }
+  }
+
+  // ======= Стиль ссылки About
+  &__about-link {
+    background-color: white;
+    color: pink;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      // внести в переменную цвет при ховеру
+      transform: scale(1.2);
+      background-color: #ecebeb;
+    }
+  }
+}
+
+//======= Информация о биосвойствах молока используемого для приготовления мороженного
+.bio-information-thumb {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
+
+  //======= Фоновое изображение "Jug of milk"
+  .picture-milk {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 30px;
+    }
+  }
+
+  // ======= before относительно Li
+  &::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+
+    @media screen and (min-width: 1280px) {
+      top: -10px;
+      right: -10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+//======= Фоновое изображение "IceCream"
+
+.ice-cream {
+  display: block;
+  width: auto;
+  position: absolute;
+  top: 92px;
+  right: 32px;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    right: 213px;
+    bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 353px;
+    bottom: 0;
+  }
+}
