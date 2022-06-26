@@ -20,10 +20,10 @@
         width: 100%;      
     }
          &__agency-list {        
-        list-style: none;        
+        list-style: none;          
     }
     &__agency-item {    
-        max-width: 280px;       
+        width: 100%;       
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 32px;
@@ -84,9 +84,10 @@
     }
     
     .info-list {
-        width: 100%;
+        
    
         &__info-item {
+            width: 100%;
             display: block;
             width: 179px;            
             padding-top: 24px;            
