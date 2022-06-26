@@ -1,0 +1,107 @@
+.customer-reviews {
+  margin-bottom: 60px;
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__area {
+    display: flex;
+    transition: 0.2s;
+  }
+
+  &__comment-zone {
+    text-align: center;
+    min-width: 320px;
+    height: 100%;
+
+    @include ice(desktop) {
+      min-width: 1160px;
+    }
+    @include ice(tablet) {
+      min-width: 728px;
+    }
+  }
+
+  &__photo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+
+  &__background {
+    background-color: #fafafa;
+    padding: 30px 50px;
+  }
+
+  &_comment {
+    background-image: url(../images/customers/icon/marks.svg),
+      repeating-linear-gradient(
+        to bottom,
+        #e1e1e1,
+        #e1e1e1 1px,
+        #fafafa 1px,
+        #fafafa 30px
+      );
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    padding-left: 44px;
+    padding-right: 15px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+  }
+
+  &__slider {
+    text-align: center;
+    min-width: 320px;
+
+    @include ice(desktop) {
+      min-width: 1160px;
+    }
+    @include ice(tablet) {
+      min-width: 728px;
+    }
+  }
+}
+
+.slider__btn {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0px;
+  }
+  &--current {
+    background-color: #c7133e;
+  }
+}
+
+.slider-icon {
+  fill: currentColor;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:hover,
+  &:focus {
+    fill: #d31342;
+  }
+}
+
+.btn {
+  margin-right: 18px;
+  border-radius: 50%;
+  background-color: transparent;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
