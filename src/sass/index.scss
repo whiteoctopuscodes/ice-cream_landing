@@ -1,7 +1,17 @@
-@import "./utils/mixin";
-@import "./utils/variates";
-@import "./utils/reset";
-@import "./utils/container";
 
-// components
+
 @import "./components/mobile-modal";
+
+@import './utils/mixin';
+@import './utils/variates';
+@import './utils/reset';
+@import './utils/container';
+
+@import './components/feature_products';
+
+
+@import './customer-reviews';
+@import "./components/about";
+
+@import "./components/gallery"
+
