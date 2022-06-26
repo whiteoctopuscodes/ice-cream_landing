@@ -13,6 +13,11 @@
     line-height: 1.17;
     text-transform: uppercase;
     color: $mainThemeColor;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+}
 }
 
 .products__title {
@@ -24,10 +29,22 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $primaryAccentColor;
+
+    @media screen and (min-width: 768px) {
+            font-size: 48px;
+    }
 }
 
 .products__list {
-    margin-top: 148px;
+
+    @media screen and (max-width: 767.98px) {
+        margin-top: 148px;
+    }
+
+    @media screen and (min-width: 768px) {
+        @include Flex (flex, flex-end, center);
+        margin-top: 20px;
+    }
 }
 
 .products__item {
@@ -114,6 +131,14 @@
         background-image: url('../images/products/milkshakes-sm@2x.webp') 2x;
     }
     }
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        
+        &:not(:first-child) {
+            margin-left: 16px;
+        }
+    }
 }
 
 .products__subtitle {
@@ -131,6 +156,10 @@
         position: absolute;
         top: 205px;
         left: 120px;
+
+        @media screen and (min-width: 768px) {
+            left: 100px;
+        }
 }
 }
 
