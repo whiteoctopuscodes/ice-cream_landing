@@ -26,7 +26,8 @@
         width: 100%;       
         padding-top: 40px;
         padding-bottom: 40px;
-        padding-left: 32px;
+        padding-left: 32px; 
+        padding-right: 70px;
         margin-right: 0;
 
         background-color: #ffffff;
@@ -88,10 +89,9 @@
    
         &__info-item {
             width: 100%;
-            display: block;
-            width: 179px;            
+            display: block;                        
             padding-top: 24px;            
-            margin: 0; 
+          
             text-decoration: none;    
         }
         &__info-item:not(:last-child) {
@@ -147,7 +147,7 @@
         line-height: 1.5;
         letter-spacing: 0em;
         text-align: left;
-        margin: 0;
+        margin-right: 50px;
         text-decoration: none;
 
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -268,6 +268,5 @@
     &:focus &__vector {       
         fill: $contrastTextColor;
     }       
-    }
-   
+    }   
 }
