@@ -1,0 +1,171 @@
+.products {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 60px 20px;
+}
+
+.products__box {
+    padding: 0 40px;
+}
+
+.products__label {
+    padding-left: 28px;
+
+    font-family: $accentTextFont;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: $mainThemeColor;
+}
+
+.products__title {
+    margin-top: 15px;
+
+    font-family: $accentTextFont;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primaryAccentColor;
+}
+
+.products__list {
+    margin-top: 148px;
+}
+
+.products__item {
+    position: relative;
+    padding: 160px 40px 40px 40px;
+    border-radius: 24px;
+ 
+    &--pink {
+        background-color: $mainThemeColor;
+    }
+
+    &--mokko {
+        background-color: #F0D1A5;
+    }
+
+    &--green {
+        background-color: #C2E297;
+    }
+
+    &:not(:first-child) {
+        margin-top: 140px;
+    }
+
+    &:first-child::before {
+        content: '';
+        position: absolute;
+        top: -140px;
+        left: 0;
+        height: 280px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../images-products/bcg-products/ice-cream-sm.png');
+        background-image: url('../images-products/bcg-products/ice-cream-sm.webp') 1x;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images-products/bcg-products/ice-cream-sm1@2x.png');
+
+        background-image: url('../images-products/bcg-products/ice-cream-sm1@2x.webp') 2x;
+    }
+    }
+
+    &:nth-of-type(2)::before {
+        content: '';
+        position: absolute;
+        top: -140px;
+        left: 0;
+        height: 280px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../images-products/bcg-products/ice-coffee-sm.png');
+        background-image: url('../images-products/bcg-products/ice-coffee-sm.webp') 1x;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images-products/bcg-products/ice-coffee-sm@2x.png');
+
+        background-image: url('../images-products/bcg-products/ice-coffee-sm@2x.webp') 2x;
+    }
+    }
+
+    &:last-child::before {
+        content: '';
+        position: absolute;
+        top: -140px;
+        left: 0;
+        height: 280px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../images-products/bcg-products/milkshakes-sm.png');
+        background-image: url('../images-products/bcg-products/milkshakes-sm.webp');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images-products/bcg-products/milkshakes-sm@2x.png');
+
+        background-image: url('../images-products/bcg-products/milkshakes-sm@2x.webp') 2x;
+    }
+    }
+}
+
+.products__subtitle {
+    font-family: $accentTextFont;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $contrastTextColor;
+
+    &::after {
+        content: '. . .';
+        color: $contrastTextColor;
+        position: absolute;
+        top: 205px;
+        left: 110px;
+        // display: block;
+        // width: 6px;
+        // height: 6px;
+        // border-radius: 50%;
+        // background-color: $contrastTextColor;
+    }
+}
+
+.products__description {
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $contrastTextColor;
+}
+
+.products__button {
+    @include Flex (Flex, center, center);
+    margin: 0 auto;
+    margin-top: 32px;
+    width: 40px;
+    height: 40px;
+    
+    cursor: pointer;
+    background-color: $contrastTextColor;
+    
+    border: 1px solid transparent;
+    border-radius: 50%;
+
+    & .products__icon {
+        fill: $primaryAccentColor;
+    }
+
+    &:hover, 
+    &:focus {
+        background-color: #ECEBEB;
+    }
+}
