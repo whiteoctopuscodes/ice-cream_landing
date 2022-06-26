@@ -1,10 +1,11 @@
-@media screen and (max-width: 767.9px) {
+@media screen and (min-width:320px) and (max-width: 767.9px) {
 
     .list {
         list-style: none;
     }
     h1, h2, h3 {
         margin: 0;
+        padding: 0;
     }
         
     .contact {
@@ -19,36 +20,30 @@
 
         &__container {
         display: block;
-        width: 320px;
-      
+        width: 320px;      
     }
-    &__agency-list {
+         &__agency-list {        
         list-style: none;
         margin: 0;
         padding: 0;
     }
     &__agency-item {    
-        width: 280px;       
+        max-width: 280px;       
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 32px;
+        margin-right: 0;
 
         background-color: #ffffff;
         
         border: 1px transparent; 
         border-radius: 24px;  
         box-shadow: 0px 8px 30px 0px #D414431A;
-
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+      
     }
     &__agency-item:not(:last-child) {
         margin-bottom: 20px;
-    }
-    &__agency-item:hover {
-        transform: scale(1.1);
-    }
-    
+    }     
     &__agency-name {       
         font-size: 12px;
         font-weight: 500;
@@ -63,8 +58,12 @@
         margin: 0;
         padding: 0;
         background-color: #F0D1A5;
-        border: none;
+
+        border: transparent;
         border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &__footruck-name {
         color: $contrastTextColor;  
@@ -83,15 +82,21 @@
 
         border: transparent;
         border-radius: 4px;
+
+        display: flex;
+        justify-content: center;
     }
     }
     
     .info-list {
+        width: 100%;
+        padding: 0;
+        margin: 0;
         &__info-item {
             display: block;
             width: 179px;            
             padding-top: 24px;            
-            margin-left: 0; 
+            margin: 0; 
             text-decoration: none;    
         }
         &__info-item:not(:last-child) {
@@ -149,7 +154,14 @@
         text-align: left;
         margin: 0;
         text-decoration: none;
-        
+
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+
+        &:hover,
+        &:focus {      
+            color: $primaryAccentColor;
+        }        
     }
     .mail-info {
         color:$mainTextColor;
@@ -160,27 +172,45 @@
         text-align: left;
         margin: 0;
         text-decoration: none;
+
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+
+        &:hover,
+        &:focus {      
+            color: $primaryAccentColor;
+        }  
     }
 
     //// button///
     
     /// location///
     
-    .button {
-        display: block;  
-        position: relative;
-        align-items: center;
-        justify-content: center;
+    .button { 
+        width: 100%;            
         margin-top: 32px;
+        padding: 0;
         height: auto;
         width: 100%;
+        text-align: center;
+
+     &__box-location,
+     &__box-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;    
     }
+}   
     .location-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 161.45px;
-        height: 44;  
-        margin-top: 32px;
-        margin-bottom: 10px;
-    
+        height: 44;        
+        margin-bottom: 10px;       
+        padding: 0;        
+        
         background-color: $primaryAccentColor;
         border: none;
         border-radius: 22px;
@@ -190,76 +220,34 @@
         line-height: 1.31;
         letter-spacing: 0em;
         text-align: center;    
-    
+        
+    &:hover,
+    &:focus {
+        background-color: #FFFFFF;       
+        color: $primaryAccentColor;
+    }
+
     &__vector {
         fill: $contrastTextColor;
-        margin-right: 8px;
-        background-size: contain;
+        margin-left: 8px;
+        background-size: cover;
     }
     &:hover &__vector,
-    &:focus &__vector {
-        background-color: #FFFFFF;
-        color: $primaryAccentColor;
+    &:focus &__vector {      
         fill: $primaryAccentColor;
     }
 }
-
-    .backdrop {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100px;
-        height: 100px;
-      
-        background-color: rgba(0, 0, 0, 0.2);  
-        z-index: 1000;  
-        overflow: scroll;
-      }
-    .backdrop.is-hidden {
-        opacity: 0;
-        pointer-events: none;
-        visibility: hidden;
-     }  
-    .backdrop.is-hidden .modal {
-        transform: translate(-50%, -50%);
-      }
-    .modal {       
-        max-width:250px;
-        height: auto;
-        padding-top: 40px;
-        padding-right: 39px;
-        padding-bottom: 40px;
-        padding-left: 41px;
-      
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        
-        background-image: url(/images/mapdata.jpg);
-        background-size: cover;
-      
-      &__btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      display: flex;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-      width: 30px;
-      height: 30px;
-      border: 1px solid #FFA5BA;      
-      border-radius: 50%;
-      cursor: pointer;
-
-      }     
     
-    }
      ///form///
      .form-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 161.45px;
         height: 44;
         margin: 0;
+        padding: 0;
+
         background-color: #FFFFFF;
         border: none;
         border-radius: 22px;
@@ -269,70 +257,22 @@
         line-height: 1.31;
         letter-spacing: 0em;
         text-align: center;
-    
+
+    &:hover,
+    &:focus {
+        background-color: $primaryAccentColor;
+        color: $contrastTextColor;
+    }      
+        
     &__vector {
         fill: $primaryAccentColor;
-        margin-right: 8px;
+        margin-left: 8px;
         background-size: contain;
     }
     &:hover &__vector,
-    &:focus &__vector {
-        background-color: $primaryAccentColor;
-        color: $contrastTextColor;
+    &:focus &__vector {       
         fill: $contrastTextColor;
-    }   
-    
+    }       
     }
-    .modal-form {
-        padding: 40px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-      .form-registration {
-        color: $mainHeadercolor;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 1.83;
-        letter-spacing: 0.04em;
-        text-align: center;
-      }
-      .form-field {
-        position: relative;
-        margin-bottom: 10px;
-            
-      &:last-child {
-        margin-bottom: 20px;
-      }
-      &__icon {
-        position: absolute;
-        top: 50%;
-        left: 12px;
-      }
-      &__label {
-        display: block;
-        color:$mainTextColor;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-bottom: 4px;
-      }    
-    }   
-   .btn-primary {
-    width: 161.45px;
-    height: 44;  
-    margin-top: 32px;
-    margin-bottom: 10px;
-
-    background-color: $primaryAccentColor;
-    border: none;
-    border-radius: 22px;
-    color: $contrastTextColor;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.31;
-    letter-spacing: 0em;
-    text-align: center; 
-   }   
+   
 }
