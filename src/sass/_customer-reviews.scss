@@ -1,12 +1,12 @@
 .customer-reviews {
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__container {
     overflow: hidden;
   }
 
   &__area {
-    display: flex;
     transition: 0.2s;
   }
 
@@ -18,6 +18,7 @@
     @include ice(desktop) {
       min-width: 1160px;
     }
+
     @include ice(tablet) {
       min-width: 728px;
     }
@@ -36,13 +37,11 @@
 
   &_comment {
     background-image: url(../images/customers/icon/marks.svg),
-      repeating-linear-gradient(
-        to bottom,
+      repeating-linear-gradient(to bottom,
         #e1e1e1,
         #e1e1e1 1px,
         #fafafa 1px,
-        #fafafa 30px
-      );
+        #fafafa 30px);
     background-repeat: no-repeat;
     background-position: left top;
 
@@ -64,12 +63,12 @@
     text-align: center;
     min-width: 320px;
 
-    @include ice(desktop) {
-      min-width: 1160px;
-    }
-    @include ice(tablet) {
-      min-width: 728px;
-    }
+    //   @include ice(desktop) {
+    //     min-width: 1160px;
+    //   }
+    //   @include ice(tablet) {
+    //     min-width: 728px;
+    //   }
   }
 }
 
@@ -80,9 +79,11 @@
   background-color: #d9d9d9;
 
   margin-right: 10px;
+
   &:last-child {
     margin-right: 0px;
   }
+
   &--current {
     background-color: #c7133e;
   }
@@ -92,7 +93,7 @@
   fill: currentColor;
 }
 
-.btn {
+.btn-slider {
   cursor: pointer;
 
   margin-right: 18px;
