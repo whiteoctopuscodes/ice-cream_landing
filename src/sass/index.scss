@@ -1,15 +1,18 @@
-
-
-
-
-@import './utils/mixin';
 @import './utils/variates';
 @import './utils/reset';
+@import './utils/mixin';
 @import './utils/container';
+
+
+/*выше ничего не складывать!*/
 
 @import "./contact-mob";
 
+
 @import './components/feature_products';
+
+@import "./components/about";
+
 
 @import './customer-reviews';
 

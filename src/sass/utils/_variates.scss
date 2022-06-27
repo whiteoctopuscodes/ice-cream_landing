@@ -1,6 +1,8 @@
 $mainThemeColor: #FFB8CA;
 $primaryAccentColor: #D41443;
 $secondaryAccentColor: #FFA5BA;
+$iconBack: #FEA5BB;
+$iconHoverBack: #D41443;
 
 $primaryBackground: #E5E5E5;
 $secondaryBackground: #FFF5F6;
@@ -10,3 +12,6 @@ $mainTextColor: #907E82;
 $contrastTextColor: #FFFFFF;
 
 $accentTextFont: 'Titan One', sans-serif;
+
+$transTime: 250ms;
+$transFunction: cubic-bezier(0.4, 0, 0.2, 1);
