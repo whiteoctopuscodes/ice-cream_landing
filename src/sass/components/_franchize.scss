@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
   ///form///
   .form-btn {
     display: flex;
@@ -33,6 +34,43 @@
     fill: $contrastTextColor;
 }       
 }      
+=======
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 161.45px;
+  height: 44;
+  margin: 0;
+  padding: 0;
+
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 22px;
+  color: $primaryAccentColor;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+  letter-spacing: 0em;
+  text-align: center;
+
+&:hover,
+&:focus {
+  background-color: $primaryAccentColor;
+  color: $contrastTextColor;
+}      
+  
+&__vector {
+  fill: $primaryAccentColor;
+  margin-left: 8px;
+  background-size: contain;
+}
+&:hover &__vector,
+&:focus &__vector {       
+  fill: $contrastTextColor;
+}       
+}   
+>>>>>>> Stashed changes
 .franchize {
   position: fixed;
   display: block;
