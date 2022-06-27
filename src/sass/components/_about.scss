@@ -65,7 +65,7 @@ color:$primaryAccentColor;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
-line-height: 162%;
+line-height: 1.62;
 color:$mainHeadercolor;
 margin-bottom: 40px;
 max-width: 220px;
@@ -76,7 +76,7 @@ max-width: 220px;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
-line-height: 162%;
+line-height: 1.62;
 color:$mainTextColor;
 margin-bottom: 20px;
 max-width: 220px;
@@ -87,14 +87,14 @@ max-width: 220px;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 162%;
+    line-height: 1.62;
     color:$mainTextColor;
     margin-bottom: 20px;
     max-width: 220px;
 }
 
 .about__btn {
-    // width: 176px;
+    width: 176px;
     height: 44px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -105,13 +105,19 @@ max-width: 220px;
     align-items: center;
     text-align: center;
     padding-left: 37px;
-    padding-right: 56px;
+    padding-right: 37px;
     color:$primaryAccentColor;
     padding-top: 15px;
     padding-bottom: 15px;
     background: #FFFFFF;
     border-radius: 22px;
     border: none;
+    background-color: $contrastTextColor;
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
     }
 
 .about__btn-icon {
