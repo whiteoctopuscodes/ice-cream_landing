@@ -7,21 +7,19 @@
         padding: 0;
     }
         
-    .contact {     
+    .contact {        
         align-items: center;
         background-image: linear-gradient(
         to bottom, 
        #ffffff 362px, 
         $secondaryBackground 362px);  
         
-   
+    &__container {
+        display: block;
+        width: 320px;
+    }
     &__agency-list {        
-        list-style: none;  
-        
-     @media screen and (min-width: 768px) {
-        @include Flex (flex, flex-end, center);
-        margin-top: 124px;
-        }       
+        list-style: none;       
     }
     &__agency-item {  
         width: 280px;         
@@ -231,13 +229,6 @@
     &:focus &__vector {      
         fill: $primaryAccentColor;
     }
-<<<<<<< Updated upstream
 }    
-        
-}
-=======
-}
-    
-     ///form///
-    
->>>>>>> Stashed changes
+
+
