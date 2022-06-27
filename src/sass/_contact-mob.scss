@@ -1,0 +1,273 @@
+@media screen and (min-width:320px) and (max-width: 767.9px) {
+
+    .list {
+        list-style: none;
+    }
+    h1, h2, h3 {
+        margin: 0;
+        padding: 0;
+    }
+        
+    .contact {
+        width: 100%;
+        align-items: center;
+        background-image: linear-gradient(
+        to bottom, 
+       #ffffff 362px, 
+        $secondaryBackground 362px);           
+
+        &__container {
+        display: block;
+        width: 100%;      
+    }
+         &__agency-list {        
+        list-style: none;          
+    }
+    &__agency-item {  
+        width: 280px;   
+        height: 412px;   
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 32px; 
+        padding-right: 32px;
+        margin-right: 0;  
+        margin-bottom: 20px;  
+
+        background-color: #ffffff;        
+        border: 1px transparent; 
+        border-radius: 24px;  
+        box-shadow: 0px 8px 30px 0px #D414431A;
+      
+    }
+    &__agency-item:not(:last-child) {
+        margin-bottom: 20px;
+    }     
+    &__agency-name {       
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        text-align: center;   
+        color: $contrastTextColor;
+        font-style: normal;   
+
+        width: 80px;
+        height: 16px;
+        margin: 0;
+        padding: 0;
+        background-color: #F0D1A5;
+
+        border: transparent;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__footruck-name {
+        color: $contrastTextColor;  
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        text-align: center;
+        align-items: center;
+    
+        width: 130px;
+        height: 16px;
+        margin: 0;
+        padding: 0;
+        background-color: #C2E297;
+
+        border: transparent;
+        border-radius: 4px;
+
+        display: flex;
+        justify-content: center;
+    }
+    }
+    
+    .info-list {
+        
+   
+        &__info-item {            
+            display: block;                        
+            padding-top: 24px;            
+          
+            text-decoration: none;    
+        }
+        &__info-item:not(:last-child) {
+            padding-bottom: 24px;
+            border-bottom: 1px solid #E1E1E1;
+        }
+        &__info-item:first-child {
+            padding-top: 20px;            
+        }
+    }
+    .sity-name {
+        color: $mainHeadercolor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.83;
+        letter-spacing: 0.04em;
+        text-align: left;
+
+        margin-bottom: 8px;
+    }
+    .commit {
+        color:$mainTextColor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        text-align: left;        
+    }
+    .day-info {
+        color: $mainHeadercolor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.83;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;        
+    }
+    .time-info {
+        color: #FFA5BA;       
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.83;
+        letter-spacing: 0em;
+        text-align: left;
+        
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    .tell-info {
+        color:$mainTextColor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-right: 50px;
+        text-decoration: none;
+
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+
+        &:hover,
+        &:focus {      
+            color: $primaryAccentColor;
+        }        
+    }
+    .mail-info {
+        color:$mainTextColor;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+        text-decoration: none;
+
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+
+        &:hover,
+        &:focus {      
+            color: $primaryAccentColor;
+        }  
+    }
+
+    //// button///
+    
+    /// location///
+    
+    .button { 
+        width: 100%;            
+        margin-top: 32px;
+        padding: 0;
+        height: auto;
+        width: 100%;
+        text-align: center;
+
+     &__box-location,
+     &__box-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;    
+    }
+}   
+    .location-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 161.45px;
+        height: 44;        
+        margin-bottom: 10px;       
+        padding: 0;        
+        
+        background-color: $primaryAccentColor;
+        border: none;
+        border-radius: 22px;
+        color: $contrastTextColor;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.31;
+        letter-spacing: 0em;
+        text-align: center;    
+        
+    &:hover,
+    &:focus {
+        background-color: #FFFFFF;       
+        color: $primaryAccentColor;
+    }
+
+    &__vector {
+        fill: $contrastTextColor;
+        margin-left: 8px;
+        background-size: cover;
+    }
+    &:hover &__vector,
+    &:focus &__vector {      
+        fill: $primaryAccentColor;
+    }
+}
+    
+     ///form///
+     .form-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 161.45px;
+        height: 44;
+        margin: 0;
+        padding: 0;
+
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 22px;
+        color: $primaryAccentColor;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.31;
+        letter-spacing: 0em;
+        text-align: center;
+
+    &:hover,
+    &:focus {
+        background-color: $primaryAccentColor;
+        color: $contrastTextColor;
+    }      
+        
+    &__vector {
+        fill: $primaryAccentColor;
+        margin-left: 8px;
+        background-size: contain;
+    }
+    &:hover &__vector,
+    &:focus &__vector {       
+        fill: $contrastTextColor;
+    }       
+    }   
+}
