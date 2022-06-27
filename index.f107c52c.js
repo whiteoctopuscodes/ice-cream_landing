@@ -1,0 +1,2 @@
+$(document).ready((function(){var n=$("customer-reviews__container "),e=$("customer-reviews__area "),t=$("customer-reviews__comment-zone"),c=$("btn-previous"),o=$("btn-next"),s=n.width()/1,i=1*s;t.each((function(n,e){$(e).css({minWidth:s})})),c.click((function(){console.log("btn-previous"),e.css({transform:"translateX(".concat(i,"px)")})})),o.click((function(){console.log("btn-next")}))}));
+//# sourceMappingURL=index.f107c52c.js.map
