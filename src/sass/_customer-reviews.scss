@@ -36,7 +36,7 @@
   }
 
   &__comment {
-    background-image: url(../images/customers/icon/marks.svg),
+    background-image:
       repeating-linear-gradient(to bottom,
         #e1e1e1,
         #e1e1e1 1px,
@@ -45,9 +45,15 @@
     background-repeat: no-repeat;
     background-position: left top;
 
+    display: flex;
+
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
+
+    &::before {
+      content: url(../images/customers/icon/marks.svg), ;
+    }
   }
 
   &__name {
