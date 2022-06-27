@@ -1,0 +1,125 @@
+//@media screen and (min-width: $medium)
+//@media screen and (min-width: $large)
+.page-header {
+  /* min-height: 94px;*/
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  padding-top: 8px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.modal__close {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+.logo__svg {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+
+  font-family: 'Titan One';
+  font-size: 24px;
+  line-height: calc(39 / 24);
+  letter-spacing: 0.04em;
+  color: $primaryAccentColor;
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+  }
+}
+.header__nav {
+  width: 250px;
+  height: 502px;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  color: $contrastTextColor;
+  background: #e17992;
+  transform: translateX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+    width: 254px;
+  }
+}
+.header__mb-btn {
+  position: absolute;
+  background: transparent;
+  right: 20px;
+  top: 32px;
+  color: currentColor;
+}
+.header__mb-btn {
+  &:hover,
+  &:focus {
+    color: $primaryAccentColor;
+  }
+}
+.header__menu-svg {
+  fill: $primaryAccentColor;
+  height: 100%;
+  width: 100%;
+}
+
+.header__menu-btn {
+  width: 20px;
+  height: 12px;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 24px;
+  }
+}
+
+.header__btn-mb {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 32px;
+}
+
+.header__nav-link {
+  color: #e17992;
+  padding-left: 20px;
+  &:hover,
+  &:focus {
+    color: $contrastTextColor;
+  }
+}
+.header__nav-item {
+  border: 1px solid #e18298;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  width: 100%;
+}
+
+.header__btn-mb2 {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
