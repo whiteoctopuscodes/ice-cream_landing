@@ -1,20 +1,23 @@
 .products {
     background-color: rgba(255, 255, 255, 1);
-    padding: 60px 20px;
 }
 
 .products__box {
-    padding: 0 40px;
+    @include Flex (flex, center, center);
+    flex-direction: column;
 }
 
 .products__label {
-    padding-left: 28px;
-
     font-family: $accentTextFont;
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
     color: $mainThemeColor;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+}
 }
 
 .products__title {
@@ -26,16 +29,32 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $primaryAccentColor;
+
+    @media screen and (min-width: 768px) {
+            font-size: 48px;
+    }
 }
 
 .products__list {
-    margin-top: 148px;
+
+    @media screen and (max-width: 767.98px) {
+        margin-top: 148px;
+    }
+
+    @media screen and (min-width: 768px) {
+        @include Flex (flex, flex-end, center);
+        margin-top: 20px;
+    }
 }
 
 .products__item {
     position: relative;
     padding: 160px 40px 40px 40px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 24px;
+    width: 280px;
+    height: 100%;
  
     &--pink {
         background-color: $mainThemeColor;
@@ -62,14 +81,14 @@
         width: 100%;
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url('../images-products/bcg-products/ice-cream-sm.png');
-        background-image: url('../images-products/bcg-products/ice-cream-sm.webp') 1x;
+        background-image: url('../images/products/ice-cream-sm.png');
+        background-image: url('../images/products/ice-cream-sm.webp') 1x;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images-products/bcg-products/ice-cream-sm1@2x.png');
+        background-image: url('../images/products/ice-cream-sm1@2x.png');
 
-        background-image: url('../images-products/bcg-products/ice-cream-sm1@2x.webp') 2x;
+        background-image: url('../images/products/ice-cream-sm1@2x.webp') 2x;
     }
     }
 
@@ -82,14 +101,14 @@
         width: 100%;
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url('../images-products/bcg-products/ice-coffee-sm.png');
-        background-image: url('../images-products/bcg-products/ice-coffee-sm.webp') 1x;
+        background-image: url('../images/products/ice-coffee-sm.png');
+        background-image: url('../images/products/ice-coffee-sm.webp') 1x;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images-products/bcg-products/ice-coffee-sm@2x.png');
+        background-image: url('../images/products/ice-coffee-sm@2x.png');
 
-        background-image: url('../images-products/bcg-products/ice-coffee-sm@2x.webp') 2x;
+        background-image: url('../images/products/ice-coffee-sm@2x.webp') 2x;
     }
     }
 
@@ -102,15 +121,23 @@
         width: 100%;
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url('../images-products/bcg-products/milkshakes-sm.png');
-        background-image: url('../images-products/bcg-products/milkshakes-sm.webp');
+        background-image: url('../images/products/milkshakes-sm.png');
+        background-image: url('../images/products/milkshakes-sm.webp');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images-products/bcg-products/milkshakes-sm@2x.png');
+        background-image: url('../images/products/milkshakes-sm@2x.png');
 
-        background-image: url('../images-products/bcg-products/milkshakes-sm@2x.webp') 2x;
+        background-image: url('../images/products/milkshakes-sm@2x.webp') 2x;
     }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        
+        &:not(:first-child) {
+            margin-left: 16px;
+        }
     }
 }
 
@@ -128,13 +155,12 @@
         color: $contrastTextColor;
         position: absolute;
         top: 205px;
-        left: 110px;
-        // display: block;
-        // width: 6px;
-        // height: 6px;
-        // border-radius: 50%;
-        // background-color: $contrastTextColor;
-    }
+        left: 120px;
+
+        @media screen and (min-width: 768px) {
+            left: 100px;
+        }
+}
 }
 
 .products__description {
@@ -160,6 +186,8 @@
     border: 1px solid transparent;
     border-radius: 50%;
 
+    transition: color $transTime $transFunction;
+
     & .products__icon {
         fill: $primaryAccentColor;
     }
@@ -169,3 +197,4 @@
         background-color: #ECEBEB;
     }
 }
+
