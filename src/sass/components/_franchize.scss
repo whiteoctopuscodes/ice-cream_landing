@@ -1,11 +1,38 @@
-.fr_btn {
-  width: 161px;
-  height: 44px;
-  border-radius: 22px;
-  background-color: $contrastTextColor;
-  color: #d41443;
-  border: 1px solid blue;
+  ///form///
+  .form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 161.45px;
+    height: 44;
+    margin: 0;
+    padding: 0;
+
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+    color: $primaryAccentColor;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.31;
+    letter-spacing: 0em;
+    text-align: center;
+
+&:hover,
+&:focus {
+    background-color: $primaryAccentColor;
+    color: $contrastTextColor;
+}    
+&__vector {
+    fill: $primaryAccentColor;
+    margin-left: 8px;
+    background-size: contain;
 }
+&:hover &__vector,
+&:focus &__vector {       
+    fill: $contrastTextColor;
+}       
+}      
 .franchize {
   position: fixed;
   display: block;
