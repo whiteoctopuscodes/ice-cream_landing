@@ -3,21 +3,20 @@
 @import './utils/mixin';
 @import './utils/container';
 
-
 /*выше ничего не складывать!*/
 
-
-@import "./components/mobile-modal";
+@import './components/mobile-modal';
 
 @import './components/feature_products';
 
-@import "./components/about";
+@import './components/about';
 
-@import "./components/gallery";
+@import './components/advantages';
+
+@import './components/gallery';
 
 @import './customer-reviews';
 
-@import "./components/franchize";
+@import './components/franchize';
 
-@import "./components/footer";
-
+@import './components/footer';

@@ -1,0 +1,39 @@
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
+
+.advantages__img {
+  margin-bottom: 16px;
+}
+
+.advantages {
+  margin-bottom: 60px;
+}
+
+.adavantages__number {
+  margin-bottom: 4px;
+  font-family: $accentTextFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $primaryAccentColor;
+}
+
+.advantges__description {
+  margin-bottom: 32px;
+  width: 230px;
+  height: 36px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  color: $mainHeadercolor;
+}
