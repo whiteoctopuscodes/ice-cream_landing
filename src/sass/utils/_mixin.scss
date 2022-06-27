@@ -1,7 +1,7 @@
 @mixin ice($type) {
     $mobile: 320px;
     $tablet: 768px;
-    $desktop: 1280px;
+    $desktop: 1200px;
     @if $type =='before-mobile' {
         @media screen and(max-width: #{$mobile - 0.02}) {
             @content;
@@ -19,6 +19,11 @@
     }
     @if $type =='tablet-only' {
         @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+            @content;
+        }
+    }
+    @if $type =='tablet-and-more' {
+        @media screen and (min-width: $tablet) {
             @content;
         }
     }
