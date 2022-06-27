@@ -35,7 +35,7 @@
     padding: 30px 50px;
   }
 
-  &_comment {
+  &__comment {
     background-image: url(../images/customers/icon/marks.svg),
       repeating-linear-gradient(to bottom,
         #e1e1e1,
@@ -44,9 +44,6 @@
         #fafafa 30px);
     background-repeat: no-repeat;
     background-position: left top;
-
-    padding-left: 44px;
-    padding-right: 15px;
 
     font-weight: 500;
     font-size: 12px;
