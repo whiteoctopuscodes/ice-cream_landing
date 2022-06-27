@@ -6,7 +6,9 @@
 
 /*выше ничего не складывать!*/
 
-@import "./contact-mob";
+@import './components/header';
+
+@import './components/hero';
 
 @import './components/feature_products';
 
@@ -15,6 +17,8 @@
 @import "./components/gallery";
 
 @import './customer-reviews';
+
+@import "./contact-mob";
 
 @import "./components/franchize";
 
