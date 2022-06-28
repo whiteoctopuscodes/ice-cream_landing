@@ -4,8 +4,12 @@
 @import './utils/container';
 
 /*выше ничего не складывать!*/
+
+
+@import './components/header';
+
 @import './components/hero';
-@import './contact-mob';
+
 
 @import './components/feature_products';
 
@@ -15,6 +19,10 @@
 
 @import './customer-reviews';
 
-@import './components/franchize';
+@import "./contact-mob";
 
-@import './components/footer';
+@import "./components/franchize";
+
+@import "./components/footer";
+
+
