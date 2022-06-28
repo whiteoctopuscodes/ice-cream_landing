@@ -3,24 +3,18 @@
 @import './utils/mixin';
 @import './utils/container';
 
-
 /*выше ничего не складывать!*/
-
-@import "./contact-mob";
+@import './components/hero';
+@import './contact-mob';
 
 @import './components/feature_products';
 
-@import "./components/about";
+@import './components/about';
 
-@import "./components/gallery";
+@import './components/gallery';
 
 @import './customer-reviews';
 
-@import "./components/franchize";
+@import './components/franchize';
 
-@import "./components/footer";
-
-
-
-
-
+@import './components/footer';
