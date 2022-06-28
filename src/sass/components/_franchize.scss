@@ -91,27 +91,27 @@
   visibility: hidden;
   pointer-events: none;
 }
-.btn_close {
+.button_close {
   position: absolute;
   top: 10px;
   right: 10px;
   background-color: transparent;
 }
-.btn_close__svg {
+.button_close__svg {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.list {
+.franchize-list {
   margin-bottom: 100px;
 }
-.list__item {
+.franchize-list__item {
   &:nth-child(odd) {
     border-top: 1px solid #e18298;
     border-bottom: 1px solid #e18298;
   }
 }
-.list_link {
+.franchize-list_link {
   text-decoration: none;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -126,7 +126,7 @@
   align-items: center;
   color: $contrastTextColor;
 }
-.text {
+.franchize-text {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
