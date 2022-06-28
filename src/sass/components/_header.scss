@@ -7,12 +7,30 @@
   z-index: 100;
 
   backdrop-filter: blur(2px);
+  @include ice(tablet-only) {
+    height: 76px;
+  }
+  @include ice(desktop) {
+    height: 84px;
+  }
 }
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  backdrop-filter: blur(2px);
+  @include ice(tablet-only) {
+    justify-content: flex-end;
+  }
+  @include ice(tablet-only) {
+    justify-content: flex-end;
+  }
+  @include ice(desktop) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
 }
 
 .logo {
@@ -41,6 +59,8 @@
   fill: currentColor;
 }
 
+
+
 .header__menu-btn {
   width: 30px;
   height: 30px;
@@ -57,6 +77,9 @@
   & .header_close {
     display: none;
   }
+  @include ice(desktop) {
+    display: none;
+  }
 }
 .header__menu-icon {
   width: 20px;
@@ -68,70 +91,16 @@
     fill: $contrastTextColor;
   }
 }
+.header__menu-btn.is-open {
+  @include ice(tablet-only) {
+    position: absolute;
+    top: 20px;
+    right: 32px;
+  }
+}
 .header__menu-btn.is-open .header_close {
   display: block;
 }
 .header__menu-btn.is-open .header_open {
   display: none;
-}
-.header-content {
-
-    @include ice(mobile-only) {
-      opacity: 0;
-      pointer-events: none;
-      visibility: hidden;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      position: fixed;
-      overflow-x: scroll;
-      padding: 60px 20px;
-      background-color: #E17992;  
-
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: flex-start;
-      justify-content: space-between;
-    }
-}
-.header-content.is-open {
-        opacity: 1;
-        visibility: inherit;
-        pointer-events: all;
-}
-.header-content__list {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.28;
-
-    color: $contrastTextColor;
-}
-.header-content__item {
-  &:not(:last-child) {
-    margin-bottom: 23px;
-  }
-}
-.current {
-    color: $primaryAccentColor;
-}
-.button_buy-now {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 0px 48px;
-    border: none;
-    border-radius: 25px;
-    background-color: $contrastTextColor;
-    color: $primaryAccentColor;
- 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-}
-.button_buy-now__icon {
-   width: 5px;
-   height: 8px;
-   margin-left: 15px;
 }
