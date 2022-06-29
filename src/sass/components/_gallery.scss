@@ -1,72 +1,78 @@
 .gallery__container {
-    width: 320px;
-    height: 136px;
-
     margin: 0 auto;
-
     background-image: linear-gradient(to bottom,
-        $secondaryBackground 30px,
-        $contrastTextColor 30px);
+                    $secondaryBackground 22%,
+                    $contrastTextColor 22%);
+
+    @include ice(mobile-only) {
+        max-width: 767px;
+    }
+
+    @include ice(tablet-only) {
+        width: 768px;
+
+        background-image: linear-gradient(to bottom,
+                            $secondaryBackground 55%,
+                            $contrastTextColor 55%);
+    }
+
+    @include ice(desktop) {
+        width: 1200px;
+        padding-left: 93px;
+        padding-right: 94px;
+    }
 }
 
 .gallery__list {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .gallery__item {
-    position: absolute;
-
-    &:nth-child(1) {
-        top: 44px;
-        left: 0;
-    }
-    
-    &:nth-child(2) {
-        top: 32px;
-        left: 46px;
+    &:not(:last-child) {
+        margin-right: 0.8%;
     }
 
-    &:nth-child(3) {
-        top: 78px;
-        left: 46px;
+    @include ice(not-desktop) {
+        float: left;
+        width: 14%;
     }
 
-    &:nth-child(4){
-        top: 0;
-        left: 92px;
-    }
-
-    &:nth-child(5) {
-        top: 92px;
-        left: 92px;
-    }
-
-    &:nth-child(6) {
-        top: 34px;
-        left: 184px;
-    }
-
-    &:nth-child(7) {
-        top: 80px;
-        left: 184px;
-    }
-
-    &:nth-child(8) {
-        top: 21px;
-        left: 230px;
-    }
-
-    &:nth-child(9) {
-        top: 67px;
-        left: 230px;
-    }
-
-    &:nth-child(10) {
-        top: 47px;
-        right: 0;
+    @include ice(desktop) {
+        width: 138px;
     }
 }
 
+.gallery__item--2x {
+    @include ice(not-desktop) {
+        width: 28.4%;
+    }
+
+    @include ice(desktop) {
+        width: 283px;
+    }
+}
+
+.gallery__img--2x:last-child {
+    @include ice(not-desktop) {
+        width: 50%;
+    }
+}
+
+.gallery__item--down {
+    padding-top: 4%;
+}
+
+.gallery__item--deep-down {
+    padding-top: 6%;
+}
+
+img + img {
+    margin-top: 3%;
+} 
+
 .gallery__img {
-    border-radius: 8px;
+    border-radius: 8%;
 }
