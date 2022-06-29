@@ -1,11 +1,6 @@
-.fr_btn {
-  width: 161px;
-  height: 44px;
-  border-radius: 22px;
-  background-color: $contrastTextColor;
-  color: #d41443;
-  border: 1px solid blue;
-}
+/*
+    
+
 .franchize {
   position: fixed;
   display: block;
@@ -26,27 +21,27 @@
   visibility: hidden;
   pointer-events: none;
 }
-.btn_close {
+.franchize-button_close {
   position: absolute;
   top: 10px;
   right: 10px;
   background-color: transparent;
 }
-.btn_close__svg {
+.franchize-button_close__svg {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.list {
+.franchize-list {
   margin-bottom: 100px;
 }
-.list__item {
+.franchize-list__item {
   &:nth-child(odd) {
     border-top: 1px solid #e18298;
     border-bottom: 1px solid #e18298;
   }
 }
-.list_link {
+.franchize-list_link {
   text-decoration: none;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -61,7 +56,7 @@
   align-items: center;
   color: $contrastTextColor;
 }
-.text {
+.franchize-text {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -99,4 +94,4 @@
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
-}
+}*/

@@ -1,4 +1,3 @@
-@media screen and (min-width:320px) and (max-width: 767.9px) {
 
     .list {
         list-style: none;
@@ -8,23 +7,30 @@
         padding: 0;
     }
         
-    .contact {
-        width: 100%;
+    .contact {        
         align-items: center;
         background-image: linear-gradient(
         to bottom, 
        #ffffff 362px, 
-        $secondaryBackground 362px);           
-
-        &__container {
+        $secondaryBackground 362px);  
+        
+    &__container {
         display: block;
-        width: 320px;      
+        width: 320px;
     }
-         &__agency-list {        
-        list-style: none;          
+    &__agency-list {        
+        list-style: none;  
+        
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    
+        @media screen and (min-width: 1200px) {
+           display: flex;
+        }
     }
-    &__agency-item {  
-        width: 280px;         
+    &__agency-item {
+        width: 100%;           
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 32px; 
@@ -35,10 +41,29 @@
         border: 1px transparent; 
         border-radius: 24px;  
         box-shadow: 0px 8px 30px 0px #D414431A;
-      
+
+            
+        @media screen and (min-width: 768px) {
+            width: 224px;
+            margin-right: 38px;
+            margin-bottom: 0;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 368px;
+            margin-right: 32px;
+            margin-bottom: 0;
+        }
     }
     &__agency-item:last-child {
         margin-bottom: 0;
+        @media screen and (min-width: 768px) {
+            margin-right: 0;
+         }
+     
+         @media screen and (min-width: 1200px) {
+           margin-right: 0;
+         }
     }     
     &__agency-name {       
         font-size: 12px;
@@ -60,6 +85,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            width: 73px;
+            height: 28px;
+
+            font-size: 16px;
+            line-height: 1.86;
+         }
+     
+         @media screen and (min-width: 1200px) {
+            width: 75.1px;
+            height: 28px;
+
+            font-size: 16px;
+            line-height: 1.86;
+         }
     }
     &__footruck-name {
         color: $contrastTextColor;  
@@ -80,7 +121,23 @@
         border-radius: 4px;
 
         display: flex;
-        justify-content: center;
+        justify-content: center;   
+
+        @media screen and (min-width: 768px) {
+            width: 138px;
+            height: 28px;
+
+            font-size: 16px;
+            line-height: 1.86;
+         }
+     
+         @media screen and (min-width: 1200px) {
+            width: 138px;
+            height: 28px;
+
+            font-size: 16px;
+            line-height: 1.86;
+         }
     }
     }
     
@@ -89,18 +146,32 @@
    
         &__info-item {            
             display: block;                        
-            padding-top: 24px;            
-          
-            text-decoration: none;    
+            padding-top: 24px;           
+            text-decoration: none;   
+            
+            @media screen and (min-width: 768px) {
+               padding-top: 32px;             
+             }
+         
         }
         &__info-item:not(:last-child) {
             padding-bottom: 24px;
             border-bottom: 1px solid #E1E1E1;
-        }
+
+            @media screen and (min-width: 768px) {
+                padding-bottom: 32px;
+             }
+         }
+        
         &__info-item:first-child {
-            padding-top: 20px;            
+            padding-top: 20px;
+            
+            @media screen and (min-width: 768px) {
+              padding-top: 32px;
+             }        
         }
     }
+    
     .sity-name {
         color: $mainHeadercolor;
         font-size: 12px;
@@ -110,6 +181,16 @@
         text-align: left;
 
         margin-bottom: 8px;
+
+        @media screen and (min-width: 768px) {
+           margin-bottom: 12px;
+           font-size: 14px;
+           line-height: 1.86;
+         }
+         @media screen and (min-width: 1200px) {
+            margin-bottom: 12px;
+            font-size: 16px;          
+          }
     }
     .commit {
         color:$mainTextColor;
@@ -117,7 +198,16 @@
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0em;
-        text-align: left;        
+        text-align: left;     
+        
+        @media screen and (min-width: 768px) {
+            font-size: 14px;       
+             line-height: 1.66;
+         }
+         @media screen and (min-width: 1200px) {
+            font-size: 16px;       
+             line-height: 1.83;
+         }
     }
     .day-info {
         color: $mainHeadercolor;
@@ -126,7 +216,15 @@
         line-height: 1.83;
         letter-spacing: 0em;
         text-align: left;
-        margin: 0;        
+        margin: 0;   
+        
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 1.86;
+          }
+          @media screen and (min-width: 1200px) {
+            font-size: 16px;          
+           }
     }
     .time-info {
         color: #FFA5BA;       
@@ -138,6 +236,15 @@
         
         margin-top: 0;
         margin-bottom: 8px;
+
+        @media screen and (min-width: 768px) {
+         margin-bottom: 12px;
+         font-size: 14px;         
+         line-height: 1.86;
+         }
+         @media screen and (min-width: 1200px) {
+            font-size: 16px;          
+           }
     }
     .tell-info {
         color:$mainTextColor;
@@ -156,6 +263,15 @@
         &:focus {      
             color: $primaryAccentColor;
         }        
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;         
+            line-height: 1.83;
+         } 
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;        
+        }
+
     }
     .mail-info {
         color:$mainTextColor;
@@ -174,19 +290,33 @@
         &:focus {      
             color: $primaryAccentColor;
         }  
+        @media screen and (min-width: 768px) {
+            font-size: 14px;         
+            line-height: 1.83;
+         } 
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;        
+        }
     }
 
     //// button///
     
     /// location///
     
-    .button { 
+    .button-contact { 
+        
         width: 100%;            
         margin-top: 32px;
         padding: 0;
-        height: auto;
-        width: 100%;
+        height: auto;    
         text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
 
      &__box-location,
      &__box-form {
@@ -200,11 +330,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 161.45px;
-        height: 44;        
-        margin-bottom: 10px;       
-        padding: 0;        
-        
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 35px;
+        padding-right: 36px;           
+        margin-bottom: 10px;     
+                   
         background-color: $primaryAccentColor;
         border: none;
         border-radius: 22px;
@@ -213,7 +344,13 @@
         font-weight: 700;
         line-height: 1.31;
         letter-spacing: 0em;
-        text-align: center;    
+        text-align: center;   
+       
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+            margin-right: 14.5px;
+        }
+
         
     &:hover,
     &:focus {
@@ -230,42 +367,41 @@
     &:focus &__vector {      
         fill: $primaryAccentColor;
     }
-}
-    
-     ///form///
-     .form-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 161.45px;
-        height: 44;
-        margin: 0;
-        padding: 0;
+}    
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 36px;
+    padding-right: 38px;   
+    margin: 0;
 
-        background-color: #FFFFFF;
-        border: none;
-        border-radius: 22px;
-        color: $primaryAccentColor;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.31;
-        letter-spacing: 0em;
-        text-align: center;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+    color: $primaryAccentColor;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.31;
+    letter-spacing: 0em;
+    text-align: center;
 
-    &:hover,
-    &:focus {
-        background-color: $primaryAccentColor;
-        color: $contrastTextColor;
-    }      
-        
-    &__vector {
-        fill: $primaryAccentColor;
-        margin-left: 8px;
-        background-size: contain;
-    }
-    &:hover &__vector,
-    &:focus &__vector {       
-        fill: $contrastTextColor;
-    }       
-    }   
+&:hover,
+&:focus {
+    background-color: $primaryAccentColor;
+    color: $contrastTextColor;
+}    
+&__vector {
+    fill: $primaryAccentColor;
+    margin-left: 8px;
+    background-size: contain;
 }
+&:hover &__vector,
+&:focus &__vector {       
+    fill: $contrastTextColor;
+}       
+}      
+
+
