@@ -187,7 +187,7 @@
     height: 40px;
     @include font(14px, 1.28, 0, 400);
   }
-
+}
 
 .hero-links__product-link {
   width: 62px;
@@ -396,6 +396,7 @@
     right: 109px;
   }
 }
+
 .hero-arrow-wrap {
   border-radius: 50%;
   width: 18px;
@@ -422,4 +423,3 @@
   width: 8px;
   height: 8px;
 }
-
