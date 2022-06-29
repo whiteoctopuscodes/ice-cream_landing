@@ -2,21 +2,25 @@
     
     @include ice(not-desktop) {
     opacity: 0;
-      pointer-events: none;
-      visibility: hidden;
-      width: 100%;
-      height: 100vh;
-      top: 0;
-      left: 0;
-      position: fixed;
-      overflow-x: scroll;
-      padding: 60px 0px;
-      background-color: #E17992;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(+100%);
 
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: flex-start;
-      justify-content: flex-end;
+    transition: 400ms transform cubic-bezier(0.175, 0.885, 0.32, 1.275), 600ms opacity cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow-x: scroll;
+    padding: 60px 0px;
+    background-color: #E17992;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
     }
   
     @include ice(desktop) {
@@ -26,21 +30,29 @@
       justify-content: center;
     }
 }
+
 .header-content.is-open {
+
+    & body {
+        overflow: hidden;
+    }
   @include ice(mobile-only) {
       opacity: 1;
       visibility: inherit;
       pointer-events: all;
       z-index: 90;
+
+      transform: translateX(0);
   }
   @include ice(tablet-only) {
-    opacity: 1;
+     opacity: 1;
       visibility: inherit;
       pointer-events: all;
-      z-index: 90;
-     & .button_buy-now {
-      display: none;
-     }
+
+      transform: translateX(70%);
+
+      z-index: 90; 
+
   }
   @include ice(tablet-only) {
     & .header-content__list{
@@ -56,6 +68,9 @@
     line-height: 1.28;
     color: $contrastTextColor;
     
+    @media screen and (min-width:380px) and (max-width:1199px){
+        font-size: 16px;
+    }
 
     @include ice(not-desktop) {
       display: none;
@@ -73,16 +88,12 @@
 }
 .header-content__item {
     @include ice(not-desktop) {
-        padding-left: 20px;
         padding-top: 12px;
         padding-bottom: 12px;
+        border-top: 1px solid #E18298;
 
         &:last-child {
           border-bottom: 1px solid #E18298;  
-        }
-        
-        &:not(:last-child) {
-        border-top: 1px solid #E18298;
         }
     }
     @include ice(desktop) {
@@ -94,11 +105,27 @@
     }
 }
 .header-content__link {
-    @include ice(tablet-and-more) {
-        &:not(:last-child) {
-        padding-bottom: 11px;
-        }
+    color: $contrastTextColor;
+
+    transition: 350ms color cubic-bezier(0.19, 1, 0.22, 1); 
+
+    @include ice(not-desktop) {
+        padding-bottom: 12px;
+        padding-top: 12px;
+        padding-right: 30px;
+        padding-left: 20px;
+}
+
+    @include ice(desktop) {
+        padding-bottom: 12px;
+        padding-top: 53px;
+
     }
+
+    &:hover, &:focus {
+        color: $primaryAccentColor;
+    }
+ 
 }
 
 .current {
@@ -109,8 +136,8 @@
 
 .button_buy-now {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
     cursor: pointer;
 
@@ -127,23 +154,31 @@
     @include ice(mobile-only) {
       margin-bottom: 33px;
     }
-
     @include ice(tablet-only) {
-      display: none;
-    }
+        margin: 0;
+        margin-left: 20px;
+        margin-bottom: 33px;
+      }
 }
 .tablet-button {
   display: none; 
+
   @include ice(tablet-only) {
-    display: block;
-    margin-left: 32px;
-    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 27px;
+
+    padding: 11px 37px;
+
     cursor: pointer;
   }
 
 }
 .button_buy-now__icon {
-   width: 5px;
-   height: 8px;
+   width: 8px;
+   height: 16px;
    margin-left: 15px;
+   color: currentColor;
 }
