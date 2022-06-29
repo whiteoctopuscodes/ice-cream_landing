@@ -10,6 +10,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu.is_hidden{
+  transform: translate(50%, 10%) rotate(360deg);
+  
+}
 .is_hidden {
   opacity: 0;
   visibility: hidden;
