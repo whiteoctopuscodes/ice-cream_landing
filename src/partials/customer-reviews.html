@@ -6,6 +6,13 @@
         <picture>
           <source
             srcset="
+              ./images/customers/girl-1.webp    1x,
+              ./images/customers/girl-1@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
               ./images/customers/girl-1.png    1x,
               ./images/customers/girl-1@2x.png 2x
             "
@@ -36,8 +43,17 @@
         <p class="customer-reviews__name">Emily, Los Angeles</p>
       </div>
       <!-- Второй отзыв -->
-      <!-- <div class="customer-reviews__comment-zone">
+      <div
+        class="customer-reviews__comment-zone customer-reviews__comment-zone--slider"
+      >
         <picture>
+          <source
+            srcset="
+              ./images/customers/girl-2.webp    1x,
+              ./images/customers/girl-2@2x.webp 2x
+            "
+            type="image/webp"
+          />
           <source
             srcset="
               ./images/customers/girl-2.png    1x,
@@ -54,18 +70,31 @@
             loading="lazy"
           />
         </picture>
-        
-        <p class="customer-reviews_comment">
+
+        <p class="customer-reviews__comment">
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
           ipsum primis in nibh vel risus.
         </p>
-
+        <div class="slider">
+          <button class="slider__btn slider__btn"></button>
+          <button class="slider__btn slider__btn--current"></button>
+          <button class="slider__btn slider__btn"></button>
+        </div>
         <p class="customer-reviews__name">Susie, New York City</p>
-      </div> -->
+      </div>
       <!-- Третий отзыв -->
-      <!-- <div class="customer-reviews__comment-zone">
+      <div
+        class="customer-reviews__comment-zone customer-reviews__comment-zone--slider"
+      >
         <picture>
+          <source
+            srcset="
+              ./images/customers/girl-3.webp    1x,
+              ./images/customers/girl-3@2x.webp 2x
+            "
+            type="image/webp"
+          />
           <source
             srcset="
               ./images/customers/girl-3.png    1x,
@@ -81,17 +110,21 @@
             height="85"
             loading="lazy"
           />
-        </picture> -->
-      
-        <!-- <p class="customer-reviews_comment">
+        </picture>
+
+        <p class="customer-reviews__comment">
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
           ipsum primis in nibh vel risus.
         </p>
-
+        <div class="slider">
+          <button class="slider__btn slider__btn"></button>
+          <button class="slider__btn slider__btn"></button>
+          <button class="slider__btn slider__btn--current"></button>
+        </div>
         <p class="customer-reviews__name">Janet, Chicago</p>
       </div>
-    </div> -->
+    </div>
 
     <div class="customer-reviews__slider">
       <button class="btn-slider btn-home"> <a href="#home-hero">

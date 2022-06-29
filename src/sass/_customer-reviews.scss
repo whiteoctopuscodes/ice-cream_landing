@@ -3,56 +3,89 @@
   padding-bottom: 60px;
 
   &__container {
-    overflow: hidden;
+    position: relative;
   }
 
   &__area {
-    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
 
   &__comment-zone {
     text-align: center;
-    min-width: 320px;
-    height: 100%;
 
-    @include ice(desktop) {
-      min-width: 1160px;
+
+    &--slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      opacity: 0;
     }
 
-    @include ice(tablet) {
-      min-width: 728px;
-    }
   }
 
   &__photo {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
+
+    @include ice(tablet) {
+      margin-bottom: 20px;
+    }
+
+    @include ice(desktop) {
+      margin-bottom: 16px;
+    }
   }
 
   &__background {
     background-color: #fafafa;
     padding: 30px 50px;
+
+    @include ice(tablet) {
+      padding: 37px 55px;
+    }
+
+    @include ice(desktop) {
+      padding: 47px 73px;
+    }
   }
 
   &__comment {
-    background-image:
+    background-image: url(../images/customers/icon/marks.svg),
       repeating-linear-gradient(to bottom,
         #e1e1e1,
         #e1e1e1 1px,
         #fafafa 1px,
         #fafafa 30px);
-    background-repeat: no-repeat;
-    background-position: left top;
 
-    display: flex;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    display: block;
+    text-align: center;
+    width: 157px;
 
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
 
-    &::before {
-      content: url(../images/customers/icon/marks.svg), ;
+    @include ice(tablet) {
+      width: 514px;
+      font-size: 14px;
+      line-height: 2.16;
+      padding: 0px 55px;
+    }
+
+    @include ice(desktop) {
+      width: 750px;
+      font-size: 16px;
+      line-height: 1.86;
+      padding-left: 36px;
+      padding-right: 35px;
     }
   }
 
@@ -60,18 +93,19 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
+
+    @include ice(tablet) {
+      font-size: 16px;
+    }
+
+    @include ice(desktop) {
+      font-size: 20px;
+    }
   }
 
   &__slider {
     text-align: center;
-    min-width: 320px;
 
-    //   @include ice(desktop) {
-    //     min-width: 1160px;
-    //   }
-    //   @include ice(tablet) {
-    //     min-width: 728px;
-    //   }
   }
 }
 
