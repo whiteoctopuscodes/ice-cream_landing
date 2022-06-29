@@ -1,194 +1,425 @@
-.hero {
-  background: #ffb8ca;
-  background-image: url('../images/hero-header/ice-cream_320.png');
 
-  background-size: auto 90%;
-  background-repeat: no-repeat;
-  background-position: bottom right -80px;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/hero-header/ice-cream_320@2x.png');
-  }
+.hero-section {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 502px;
+  background-color: $mainThemeColor;
+  overflow: hidden;
+
+
   @media screen and (min-width: 768px) {
-    background-image: none;
+    height: 399px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 665px;
   }
 }
-.hero__container {
+
+
+.hero-container {
   position: relative;
-  padding-top: 194px;
-  padding-bottom: 190px;
-  background-repeat: no-repeat;
+
+  width: 320px;
+  height: 100%;
+
   @media screen and (min-width: 768px) {
-    background-size: auto 90%;
+    width: 768px;
+  }
 
-    padding-top: 102px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
 
-    padding-bottom: 190px;
-    background-image: url('../images/hero-header/ice-cream_768.png');
-    background-position: bottom right 185px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/hero-header/ice-cream_768@2x.png');
+.hero-mob {
+  @media screen and (max-width: 767px) {
+    position: relative;
+
+    width: 320px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero-circle {
+  position: absolute;
+  bottom: 75px;
+  left: 36px;
+
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: $secondaryAccentColor;
+
+  animation: fadeInAnimation ease 3s;
+
+  @keyframes fadeInAnimation {
+    0% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(0);
+
     }
   }
+
+  @media screen and (min-width: 768px) {
+    bottom: 46px;
+    left: 307px;
+
+    width: 324px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 75px;
+    left: 475px;
+
+    width: 538px;
+    height: 538px;
+  }
 }
-.hero__title {
-  position: relative;
-  margin-bottom: 20px;
+
+
+.hero-ice-cream-img {
+  position: absolute;
+  bottom: 0;
+  left: 117px;
+
+  animation: fadeInAnimation ease 2s;
+
+  @keyframes fadeInAnimation {
+    0% {
+      transform: translateY(40%);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 378px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 594px;
+  }
+}
+
+.hero-wrap {
+  position: absolute;
+  left: 0;
+  bottom: 160px;
+
+  @media screen and (min-width: 768px) {
+    left: 34px;
+    bottom: 173px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 115px;
+    bottom: 292px;
+  }
+}
+
+.hero-wrap__title {
+
   font-family: 'Titan One';
-  font-weight: 400;
+  @include font(26px, 1.15, 0.04em, 400);
+  color: $contrastTextColor;
   text-transform: uppercase;
 
-  color: $contrastTextColor;
+  margin-bottom: 19px;
 
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
+
   @media screen and (min-width: 768px) {
-    font-size: 22px;
-    line-height: 1.13;
-    letter-spacing: 0.04em;
+    @include font(22px, 1.13, 0.04em, 400);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 25px;
+    @include font(38px, 1.15, 0.04em, 400);
   }
 }
-.hero-btn-list {
+
+
+.hero-wrap__title-accent {
+  display: block;
+  font-family: 'Titan One';
+  @include font(48px, 0.95, 0.04em, 400);
+  color: $primaryAccentColor;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    @include font(34px, 0.91, 0.04em, 400);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: -7px;
+
+    @include font(58px, 0.9, 0.04em, 400);
+  }
+}
+
+.hero-links {
   display: flex;
+}
+
+.hero-links__product-link,
+.hero-links__how-link {
+  @include font(8px, 1.25, 0, 400);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 24px;
+  border-radius: 20px;
+
+  @media screen and (min-width: 1280px) {
+    height: 40px;
+    @include font(14px, 1.28, 0, 400);
+  }
+}
+
+.hero-links__product-link {
+  width: 62px;
+
+  color: $contrastTextColor;
+  background-color: $primaryAccentColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $contrastTextColor;
+    background-color: darkorange;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 104px;
+  }
+}
+
+.hero-links__how-link {
+  margin-left: 8px;
+  width: 83px;
+
+  color: $primaryAccentColor;
+  background-color: $contrastTextColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $primaryAccentColor;
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+    margin-left: 15px;
+  }
+}
+
+.hero-features {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hero-features-numbers {
+  position: absolute;
+  right: 44px;
+  top: 96px;
+
+  @media screen and (min-width: 1280px) {
+    right: 115px;
+    top: 160px;
+  }
+}
+
+.hero-features-numbers__top::before,
+.hero-features-numbers__bottom::before {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: -2px;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+
+  background-color: $contrastTextColor;
+
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+    right: -18px;
+    top: -4px;
+  }
+}
+
+
+.hero-features-numbers__bottom::before {
+  right: -8px;
+
+  @media screen and (min-width: 1280px) {
+    right: -18px;
+  }
+}
+
+.hero-features-numbers__top {
+  margin-bottom: 14px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 18px;
+  }
+}
+
+
+.hero-features-numbers__bottom {
+  position: relative;
+  margin-right: -2px;
+  @media screen and (min-width: 1280px) {
+    margin-right: 0;
+
+  }
+}
+
+.hero-features-numbers__number {
   position: relative;
 
-  @media screen and (min-width: 768px) {
-  }
-}
-.hero-btn-list__item {
-  margin-right: 8px;
-}
+  text-align: right;
 
-/*.hero__text {
-  font-family: 'DM sans';
-  font-size: 8px;
-  color: $contrastTextColor;
-  margin-bottom: 7px;
-  
-}*/
+  font-family: 'Titan One';
+  @include font(28px, 1.14, 0.04em, 400);
 
-.hero__wrap {
-  display: none;
-  position: absolute;
-
-  left: 167px;
-  bottom: 56px;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    width: 115px;
-  }
-}
-
-.hero__list-wrap {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.hero__img-wrap {
-  display: none;
-  position: absolute;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    width: auto;
-    width: 152px;
-    left: 15px;
-    bottom: 16px;
-  }
-}
-.hero__img-wrap-2 {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    width: auto;
-    width: 190px;
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    right: 15px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 304px;
-  }
-}
-.hero__ice-wrap {
-  position: absolute;
-  left: 36px;
-  bottom: 0px;
-  z-index: 1;
-  width: 346px;
-  height: auto;
-  @media screen and (min-width: 768px) {
-    width: 335px;
-    bottom: 0px;
-    left: 248px;
-  }
-}
-
-.section__title--hero {
-  font-family: Titan One;
-  font-weight: 400;
-
-  font-size: 48px;
-  line-height: 1.147;
-  letter-spacing: 0.04em;
-
-  text-align: center;
   text-transform: uppercase;
 
   color: $primaryAccentColor;
 
-  @media screen and (min-width: 768px) {
-    font-size: 34px;
-    line-height: 1.145;
+  @media screen and (min-width: 1280px) {
+    @include font(46px, 1.15, 0.04em, 400);
   }
 }
 
-.bttn {
-  font-family: 'DM Sans';
+.hero-features-numbers__text {
+  text-align: right;
+
+  @include font(8px, 1.25, 0, 400);
+
+  color: $contrastTextColor;
+
+  @media screen and (min-width: 1280px) {
+    @include font(14px, 1.28, 0, 400);
+  }
+}
+
+.hero-features-info {
+  position: absolute;
+  bottom: 28px;
+  left: 34px;
+
   display: flex;
-  align-items: baseline;
-  text-align: center;
 
-  border-radius: 20px;
+  animation: fadeInAnimationInfo ease 1.8s;
 
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-
-  padding: 7px 14px;
-
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &--accent {
-    color: $contrastTextColor;
-    background-color: $primaryAccentColor;
-
-    &:hover,
-    &:focus {
-      background-color: #c7133e;
+  @keyframes fadeInAnimationInfo {
+    0% {
+      transform: translateX(-50px);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
-  &--main {
-    color: $primaryAccentColor;
-    background-color: $contrastTextColor;
 
-    &:hover,
-    &:focus {
-      background-color: #ecebeb;
+
+  @media screen and (min-width: 1280px) {
+    left: 77px;
+    bottom: 45px;
+  }
+}
+
+.hero-features-info__wrap {
+  margin-top: auto;
+  margin-bottom: 6px;
+  margin-left: -4px;
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+    margin-bottom: 11px;
+  }
+}
+
+.hero-features-info__text {
+  width: 114px;
+  margin-bottom: 7px;
+
+  @include font(8px, 1.5, 0, 400);
+
+  color: $contrastTextColor;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+    width: 200px;
+    @include font(14px, 1.42, 0, 400);
+  }
+}
+
+.hero-features-info__pic {
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+
+  animation: fadeInAnimationpic ease 1.5s;
+
+  @keyframes fadeInAnimationpic {
+    0% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
+
+  @media screen and (min-width: 1280px) {
+    right: 109px;
+  }
+}
+
+.hero-arrow-wrap {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  fill: $primaryAccentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+}
+
+.hero-arrow-btn {
+  width: 8px;
+  height: 8px;
 }

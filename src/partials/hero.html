@@ -1,29 +1,77 @@
-<section class="hero">
-    <div class="container hero__container">
-        <div class="hero__list-wrap">
-            <div class="hero__title-btn-wrap">
-                <h1 class="hero__title">
-                    ice cream <br />
-                    made with<br />
-                    <span class="section__title--hero ">passion</span>
-                </h1>
 
-                <ul class="hero-btn-list">
-                    <li class="hero-btn-list__item hero-btn-list__link">
-                        
-                            <button class="bttn bttn--accent">Products</button>
-                        
-                    </li>
-                    
-                    <li class="hero-btn-list__link">
-                        
-                                    <button class=" bttn bttn--main hero__btn">How
-                                it’s made?</button>
-                        
-                    </li>
-                </ul>
+<section class="hero-section" id="hero">
+    <div class="container hero-container">
+        <div class="hero-mob">
+            <div class="hero-circle"></div>
+            <picture class="hero-ice-cream-img">
+                <source srcset="
+                        ./images/hero-header/hero/hero-desk-ice-cream-1x.png 1x,
+                        ./images/hero-header/hero/hero-desk-ice-cream-2x.png 2x
+                      " media="(min-width: 1280px)" />
+                <source srcset="
+                        ./images/hero-header/hero/hero-tab-ice-cream-1x.png 1x,
+                        ./images/hero-header/hero/hero-tab-ice-cream-2x.png 2x
+                      " media="(min-width: 768px)" />
+                <source srcset="
+                        ./images/hero-header/hero/hero-mob-ice-cream-1x.png 1x,
+                        ./images/hero-header/hero/hero-mob-ice-cream-2x.png 2x
+                      " media="(min-width: 320px)" />
+                <img src="./images/hero-header/hero/hero-mob-ice-cream-1x.png" alt="tasty ice-cream" />
+            </picture>
+            <div class="hero-wrap">
+                <h1 class="hero-wrap__title">
+                    ice cream<br />made with<br /><span class="hero-wrap__title-accent">passion</span>
+                </h1>
+                <div class="hero-links">
+                    <a href="#prod" class="hero-links__product-link link">Products</a>
+                    <a href="#about" class="hero-links__how-link link">How it’s made?</a>
+                </div>
             </div>
-            
+        </div>
+        <div class="hero-features">
+            <div class="hero-features-numbers">
+                <div class="hero-features-numbers__top">
+                    <p class="hero-features-numbers__number">16</p>
+                    <p class="hero-features-numbers__text">cafes</p>
+                </div>
+                <div class="hero-features-numbers__bottom">
+                    <p class="hero-features-numbers__number">23</p>
+                    <p class="hero-features-numbers__text">food trucks</p>
+                </div>
+            </div>
+            <div class="hero-features-info">
+                <picture class="hero-features-info__img">
+                    <source
+                        srcset="./images/hero-header/hero/hero-desk-milk-1x.png 1x, ./images/hero-header/hero/hero-desk-milk-2x.png 2x"
+                        media="(min-width: 1280px)" />
+                    <source
+                        srcset="./images/hero-header/hero/hero-tab-milk-1x.png 1x, ./images/hero-header/hero/hero-tab-milk-2x.png 2x"
+                        media="(min-width: 768px)" />
+                    <img src="./images/hero-header/hero/hero-desk-milk-1x.png" alt="milk with drops" />
+                </picture>
+                <div class="hero-features-info__wrap">
+                    <p class="hero-features-info__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et
+                    </p>
+
+                    <a href="" class="hero-features-info__link hero-arrow-wrap">
+                            <svg class="hero-arrow-btn">
+                                <use href="./images/sprite.svg#arrow-right_1"></use>
+                            </svg>
+                    </a>
+                </div>
+            </div>
+            <picture class="hero-features-info__pic">
+                <source
+                    srcset="./images/hero-header/hero/hero-tab-girl-1x.png 1x, ./images/hero-header/hero/hero-desk-girl-2x.png 2x"
+                    media="(min-width: 1280px)" />
+                <source
+                    srcset="./images/hero-header/hero/hero-tab-girl-1x.png 1x, ./images/hero-header/hero/hero-tab-girl-2x.png 2x"
+                    media="(min-width: 768px)" />
+                <img src="./images/hero-header/hero/hero-tab-girl-1x.png" alt="pretty girl with ice-cream" />
+            </picture>
         </div>
     </div>
+  </div>
 </section>
