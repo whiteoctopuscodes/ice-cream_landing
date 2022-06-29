@@ -11,6 +11,7 @@
   }
   
   @include ice(tablet-only) {
+
     height: 76px;
     backdrop-filter: blur(0);
   }

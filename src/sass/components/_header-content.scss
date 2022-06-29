@@ -147,6 +147,8 @@
     border-radius: 25px;
     background-color: $contrastTextColor;
     color: $primaryAccentColor;
+
+    transition: 350ms background-color cubic-bezier(0.19, 1, 0.22, 1); 
  
     font-weight: 700;
     font-size: 16px;
@@ -159,6 +161,10 @@
         margin: 0;
         margin-left: 20px;
         margin-bottom: 33px;
+      }
+
+      &:hover, &:focus {
+        background-color: #ECEBEB;
       }
 }
 .tablet-button {
