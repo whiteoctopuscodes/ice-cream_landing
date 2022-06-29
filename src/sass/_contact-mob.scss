@@ -302,13 +302,12 @@
     
     /// location///
     
-    .button { 
+    .button-contact { 
         
         width: 100%;            
         margin-top: 32px;
         padding: 0;
-        height: auto;
-        width: 100%;
+        height: auto;    
         text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -330,11 +329,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 161.45px;
-        height: 44;        
-        margin-bottom: 10px;       
-        padding: 0;        
-        
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 35px;
+        padding-right: 36px;           
+        margin-bottom: 10px;     
+                   
         background-color: $primaryAccentColor;
         border: none;
         border-radius: 22px;
