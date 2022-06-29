@@ -14,12 +14,12 @@
     text-transform: uppercase;
     color: $mainThemeColor;
 
-    @media screen and (min-width: 768px) {
+    @include ice(tablet) {
         font-size: 26px;
         line-height: 1.15;
 }
 
-@media screen and (min-width: 1200px) {
+@include ice(desktop) {
     font-size: 30px;
     line-height: 1.13;
 }
@@ -35,11 +35,11 @@
     text-transform: uppercase;
     color: $primaryAccentColor;
 
-    @media screen and (min-width: 768px) {
+    @include ice(tablet) {
             font-size: 48px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include ice(desktop) {
         font-size: 58px;
         letter-spacing: 0.06em;
 }
@@ -47,11 +47,11 @@
 
 .products__list {
 
-    @media screen and (max-width: 767.98px) {
+    @include ice(mobile-only) {
         margin-top: 148px;
     }
 
-    @media screen and (min-width: 768px) {
+    @include ice(tablet) {
         @include Flex (flex, flex-end, center);
         margin-top: 20px;
     }
@@ -232,7 +232,7 @@
     }
 
 
-    @media screen and (min-width: 768px) {
+    @include ice(tablet) {
         padding-top: 120px;
         
         &:not(:first-child) {
@@ -240,7 +240,7 @@
         }
     }
 
-    @media screen and (min-width: 1200px) {
+    @include ice(desktop) {
         padding-top: 310px;
         
         &:not(:first-child) {
@@ -265,7 +265,7 @@
         padding-top: 35px;
 }
 
-@media screen and (min-width: 1200px) {
+@include ice(desktop) {
     font-size: 30px;
     line-height: 1.13;
 }
@@ -280,13 +280,14 @@
     letter-spacing: 0.04em;
     color: $contrastTextColor;
 
-    @media screen and (min-width: 768px) {
+    @include ice(tablet) {
         line-height: 1.76;
-}
+    }
 
-@media screen and (min-width: 1200px) {
+@include ice(desktop) {
     font-size: 16px;
 }
+
 }
 
 .products__button {

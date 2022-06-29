@@ -41,6 +41,11 @@
             </path>
         </symbol>
 
+        <!-- PRODUCTS -->
+<symbol id="icon-product-btn" viewBox="0 0 20 20">
+<path d="M16.172 9l-6.071-6.071 1.414-1.414 8.485 8.485-8.485 8.485-1.414-1.414 6.071-6.071h-16.172v-2z"></path>
+</symbol>
+
         <!--HEADER-->
         <symbol id="icon-burger-ice" viewBox="0 0 127 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M31.36 16.32c0 8.66-6.877 15.68-15.36 15.68s-15.36-7.020-15.36-15.68c0-8.66 6.877-15.68 15.36-15.68s15.36 7.020 15.36 15.68z"></path>
