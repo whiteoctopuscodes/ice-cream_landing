@@ -5,17 +5,21 @@
 
 /*выше ничего не складывать!*/
 
-@import './components/mobile-modal';
+@import './components/header';
+
+@import './components/header-content';
+
+@import './components/hero';
 
 @import './components/feature_products';
 
 @import './components/about';
 
-@import './components/advantages';
-
 @import './components/gallery';
 
 @import './customer-reviews';
+
+@import './contact-mob';
 
 @import './components/franchize';
 
