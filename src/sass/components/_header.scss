@@ -12,9 +12,11 @@
   
   @include ice(tablet-only) {
     height: 76px;
+    backdrop-filter: blur(0);
   }
   @include ice(desktop) {
     height: 84px;
+    backdrop-filter: blur(0);
   }
 }
 .header__container {

@@ -1,3 +1,16 @@
+
+.backdrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 101;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
 .location_btn{
     width: 161px;
     height: 44px;
@@ -22,11 +35,10 @@
 .location{
     position: fixed;
     display: flex;
-    top: 0;
-    left: 0;
-    z-index: 101;
-    width: 100%;
-    height: 100%;
+    top: 10%;
+    left: 15%;
+    width: 75%;
+    height: 75%;
     border: 2px solid #D41342;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -39,6 +51,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .fr_btn {
     width: 161px;
     height: 44px;
@@ -90,7 +103,7 @@
 .franchize.is_hidden {
     transform: translate(-50%, -50%) skew(60deg);
 }
-.location.is_hidden{
+.backdrop.is_hidden{
     transform: translate(0, 0) scale(0.5);
 }
 
