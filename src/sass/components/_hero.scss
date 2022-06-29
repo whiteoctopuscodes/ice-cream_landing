@@ -1,3 +1,4 @@
+
 .hero-section {
   position: relative;
 
@@ -8,6 +9,7 @@
   background-color: $mainThemeColor;
   overflow: hidden;
 
+
   @media screen and (min-width: 768px) {
     height: 399px;
   }
@@ -16,6 +18,7 @@
     height: 665px;
   }
 }
+
 
 .hero-container {
   position: relative;
@@ -61,6 +64,7 @@
     }
     100% {
       transform: translateY(0);
+
     }
   }
 
@@ -80,6 +84,7 @@
     height: 538px;
   }
 }
+
 
 .hero-ice-cream-img {
   position: absolute;
@@ -125,12 +130,14 @@
 }
 
 .hero-wrap__title {
+
   font-family: 'Titan One';
   @include font(26px, 1.15, 0.04em, 400);
   color: $contrastTextColor;
   text-transform: uppercase;
 
   margin-bottom: 19px;
+
 
   @media screen and (min-width: 768px) {
     @include font(22px, 1.13, 0.04em, 400);
@@ -141,6 +148,7 @@
     @include font(38px, 1.15, 0.04em, 400);
   }
 }
+
 
 .hero-wrap__title-accent {
   display: block;
@@ -179,7 +187,7 @@
     height: 40px;
     @include font(14px, 1.28, 0, 400);
   }
-}
+
 
 .hero-links__product-link {
   width: 62px;
@@ -261,6 +269,7 @@
   }
 }
 
+
 .hero-features-numbers__bottom::before {
   right: -8px;
 
@@ -277,11 +286,13 @@
   }
 }
 
+
 .hero-features-numbers__bottom {
   position: relative;
   margin-right: -2px;
   @media screen and (min-width: 1280px) {
     margin-right: 0;
+
   }
 }
 
@@ -331,6 +342,7 @@
       transform: translateX(0);
     }
   }
+
 
   @media screen and (min-width: 1280px) {
     left: 77px;
@@ -403,9 +415,11 @@
   &:focus {
     background-color: #ecebeb;
   }
+
 }
 
 .hero-arrow-btn {
   width: 8px;
   height: 8px;
 }
+
