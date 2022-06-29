@@ -1,2 +1,0 @@
-$(document).ready((function(){const n=$("customer-reviews__container "),e=$("customer-reviews__area "),t=$("customer-reviews__comment-zone"),o=$("btn-previous"),c=$("btn-next"),s=n.width()/1,i=1*s;t.each((function(n,e){$(e).css({minWidth:s})})),o.click((function(){console.log("btn-previous"),e.css({transform:`translateX(${i}px)`})})),c.click((function(){console.log("btn-next")}))}));
-//# sourceMappingURL=index.18246783.js.map
