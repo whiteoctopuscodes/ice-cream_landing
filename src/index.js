@@ -15,3 +15,6 @@
       refs.modal.classList.toggle("is-hidden");
     }
   })();
+
+
+  import "./js/slick.min.js"
