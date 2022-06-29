@@ -5,20 +5,24 @@
   background-size: auto 90%;
   background-repeat: no-repeat;
   background-position: bottom right -80px;
+
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url('../images/hero-header/ice-cream_320@2x.png');
   }
+
   @media screen and (min-width: 768px) {
     background-image: none;
   }
 }
+
 .hero__container {
   position: relative;
   padding-top: 194px;
   padding-bottom: 190px;
   background-repeat: no-repeat;
+
   @media screen and (min-width: 768px) {
     background-size: auto 90%;
 
@@ -27,13 +31,15 @@
     padding-bottom: 190px;
     background-image: url('../images/hero-header/ice-cream_768.png');
     background-position: bottom right 185px;
+
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url('../images/hero-header/ice-cream_768@2x.png');
     }
   }
 }
+
 .hero__title {
   position: relative;
   margin-bottom: 20px;
@@ -46,19 +52,21 @@
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
+
   @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: 1.13;
     letter-spacing: 0.04em;
   }
 }
+
 .hero-btn-list {
   display: flex;
   position: relative;
 
-  @media screen and (min-width: 768px) {
-  }
+  @media screen and (min-width: 768px) {}
 }
+
 .hero-btn-list__item {
   margin-right: 8px;
 }
@@ -104,6 +112,7 @@
     bottom: 16px;
   }
 }
+
 .hero__img-wrap-2 {
   display: none;
 
@@ -122,6 +131,7 @@
     width: 304px;
   }
 }
+
 .hero__ice-wrap {
   position: absolute;
   left: 36px;
@@ -129,6 +139,7 @@
   z-index: 1;
   width: 346px;
   height: auto;
+
   @media screen and (min-width: 768px) {
     width: 335px;
     bottom: 0px;
@@ -182,6 +193,7 @@
       background-color: #c7133e;
     }
   }
+
   &--main {
     color: $primaryAccentColor;
     background-color: $contrastTextColor;
