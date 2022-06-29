@@ -21,7 +21,7 @@
 
 .location{
     position: fixed;
-    display: block;
+    display: flex;
     top: 0;
     left: 0;
     z-index: 1;
@@ -112,7 +112,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list {
+.franchise_list {
     margin-bottom: 100px;
 }
 
