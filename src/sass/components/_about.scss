@@ -1,12 +1,23 @@
 .about {
-    background-color:$secondaryBackground;
+    position: relative;
+    &::before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:$secondaryBackground;
+    }
+   
 
 
     @media screen and (min-width:1200px) {
-    max-width: 1600px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-position: top 75% right 0px;
+    background-position: top 75% center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(/src/images/img-about/milk-bg-lg.png)
