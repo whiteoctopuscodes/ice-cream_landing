@@ -51,7 +51,7 @@
 .location_btn {
   width: 161px;
   height: 44px;
-  background-color: #D41342;
+  background-color: $iconHoverBack;
   border-radius: 22px;
   color: $contrastTextColor;
   font-family: 'DM Sans';
@@ -62,6 +62,12 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+
+  transition: 350ms background-color cubic-bezier(0.19, 1, 0.22, 1);
+
+  &:hover, &:focus {
+    background-color: #f11c51;
+  }
 
   @include ice(mobile-only) {
     margin-right: auto;
