@@ -16,6 +16,10 @@
     backdrop-filter: blur(0);
   }
   @include ice(desktop) {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
     height: 84px;
     backdrop-filter: blur(0);
   }
