@@ -11,7 +11,9 @@
   }
   
   @include ice(tablet-only) {
-    backdrop-filter: blur(0px)
+
+    height: 76px;
+    backdrop-filter: blur(0);
   }
   @include ice(desktop) {
     position: absolute;
@@ -19,7 +21,7 @@
     left: 0;
     right: 0;
     height: 84px;
-    backdrop-filter: blur(0px)
+    backdrop-filter: blur(0);
   }
 }
 .header__container {
