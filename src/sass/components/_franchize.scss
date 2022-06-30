@@ -1,13 +1,84 @@
-/*
-    
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 101;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.location_btn{
+  width: 161px;
+  height: 44px;
+  background-color: #D41342;
+  border-radius: 22px;
+  color: $contrastTextColor;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.location_icon{
+  fill: #fff;
+}
+
+.location{
+  position: fixed;
+  display: flex;
+  top: 10%;
+  left: 15%;
+  width: 75%;
+  height: 75%;
+  border: 2px solid #D41342;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.location_close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fr_btn {
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #fff;
+  color: $primaryAccentColor;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
 .franchize {
   position: fixed;
   display: block;
   top: 0;
   left: 0;
-  z-index: 1;
-  background-color: #fea5bb;
+  z-index: 102;
+  background-color: $secondaryAccentColor;
   width: 100%;
   height: 100%;
   padding-top: 40px;
@@ -15,33 +86,56 @@
   padding-right: 20px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include ice(desktop){
+      top: 10%;
+      left: 40%;
+      width: 400px;
+      height: 580px;
+  }
 }
+
 .is_hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-.franchize-button_close {
+.franchize.is_hidden {
+  transform: translate(-50%, -50%) skew(60deg);
+}
+.backdrop.is_hidden{
+  transform: translate(0, 0) scale(0.5);
+}
+
+.btn_close {
   position: absolute;
   top: 10px;
   right: 10px;
   background-color: transparent;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
-.franchize-button_close__svg {
+
+.btn_close__svg {
   position: absolute;
   top: 10px;
   right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.franchize-list {
+
+.franchise_list {
   margin-bottom: 100px;
 }
-.franchize-list__item {
+
+.list__element {
   &:nth-child(odd) {
-    border-top: 1px solid #e18298;
-    border-bottom: 1px solid #e18298;
+      border-top: 1px solid #e18298;
+      border-bottom: 1px solid #e18298;
   }
 }
-.franchize-list_link {
+
+.list_link {
   text-decoration: none;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -56,7 +150,8 @@
   align-items: center;
   color: $contrastTextColor;
 }
-.franchize-text {
+
+.text {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -66,8 +161,9 @@
   font-size: 20px;
   line-height: 39px;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: $primaryAccentColor ;
 }
+
 .franchize__text {
   display: flex;
   justify-content: center;
@@ -76,9 +172,10 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 10px;
-  color: #d41443;
+  color: $primaryAccentColor;
   margin-bottom: 15px;
 }
+
 .partner_btn {
   display: flex;
   align-items: center;
@@ -88,10 +185,10 @@
   height: 40px;
   margin-right: auto;
   margin-left: auto;
-  color: #d41443;
+  color: $primaryAccentColor;
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
-}*/
+} 
