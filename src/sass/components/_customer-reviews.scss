@@ -1,6 +1,12 @@
 .customer-reviews {
   padding-top: 60px;
   padding-bottom: 60px;
+  @include ice(mobile-only) {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  
 
   &__container {
     position: relative;
@@ -67,7 +73,7 @@
 
     display: block;
     text-align: center;
-    width: 157px;
+    
 
     font-weight: 500;
     font-size: 12px;
