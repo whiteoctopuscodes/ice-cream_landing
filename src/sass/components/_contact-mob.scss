@@ -332,6 +332,7 @@
     }
 }   
     .location-btn {
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -350,7 +351,12 @@
         line-height: 1.31;
         letter-spacing: 0em;
         text-align: center;   
+
+    
        
+        @include ice(mobile-only){
+            
+        }
         @media screen and (min-width: 768px) {
             margin-bottom: 0;
             margin-right: 14.5px;
@@ -358,6 +364,8 @@
         transition: 350ms color cubic-bezier(0.19, 1, 0.22, 1); 
         transition: 350ms background-color cubic-bezier(0.19, 1, 0.22, 1); 
         
+        margin-top: 32px;
+
     &:hover,
     &:focus {
         background-color: #FFFFFF;       

@@ -1,5 +1,7 @@
 .both {
+  padding-top: 32px;
   @include ice(mobile-only) {
+
     display: block;
   }
   @include ice(tablet-only) {
@@ -44,6 +46,7 @@
   text-align: center;
   justify-content: center;
   @include ice(mobile-only) {
+    margin-bottom: 10px;
     margin-right: auto;
     margin-left: auto;
   }
