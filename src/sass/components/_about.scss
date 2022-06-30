@@ -1,15 +1,5 @@
 .about {
     background-color:$secondaryBackground;
-
-    @media screen and (min-width:1200px) {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-position: top 236px right 0px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(/src/images/img-about/milk-bg-lg.png)
-    }
 }
 
 .container__about{
@@ -21,9 +11,14 @@
         width: 768px;
     }
 
+
     @media screen and (min-width:1200px) {
-        width: 1200px;
-    }
+        max-width: 1700px;
+        background-position: top 236px right 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(/src/images/img-about/milk-bg-lg.png)
+        }
 }
 
 .about__label {
