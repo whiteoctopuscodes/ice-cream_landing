@@ -5,7 +5,7 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-position: top 236px right 0px;
+    background-position: top 75% right 0px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(/src/images/img-about/milk-bg-lg.png)
@@ -13,16 +13,18 @@
 }
 
 .container__about{
-    width: 320px;
+
+    min-width: 320px;
+    max-width: 480px;
 
     margin: 0 auto;
 
     @media screen and (min-width:768px) {
-        width: 768px;
+        max-width: 768px;
     }
 
     @media screen and (min-width:1200px) {
-        width: 1200px;
+        max-width: 1200px;
     }
 }
 
@@ -123,7 +125,8 @@
     
     margin-left: auto;
     margin-right: auto;
-    background-position: top 80px right 0px;
+    background-position: top 33% right 0px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../images/img-about/milk-bg-sm.png);
 
@@ -147,12 +150,14 @@
     line-height: 1.62;
     color:$mainHeadercolor;
     margin-bottom: 40px;
-    max-width: 220px;
+    // max-width: 220px;
+    margin-right: 60px;
 
     @media screen and (min-width:768px) {
         max-width: 334px;
         font-size: 14px;
         line-height: 1.76;
+        margin-right: 0;
     }
 
     @media screen and (min-width:1200px) {
@@ -162,6 +167,7 @@
         letter-spacing: 0.04em;
         margin-top: 90px;
         margin-bottom: 32px;
+        margin-right: 0;
     }
 }
 
@@ -173,13 +179,15 @@
     line-height: 1.62;
     color:$mainTextColor;
     margin-bottom: 20px;
-    max-width: 220px;
+    // max-width: 220px;
+    margin-right: 60px;
 
     @media screen and (min-width:768px) {
         max-width: 334px;
         font-size: 14px;
         line-height: 1.76;
         letter-spacing: 0.04em;
+        margin-right: 0;
     }
 
     @media screen and (min-width:1200px) {
@@ -188,6 +196,7 @@
         line-height: 1.94;
         letter-spacing: 0.04em;
         margin-bottom: 32px;
+        margin-right: 0;
     }
 }
 
@@ -199,7 +208,8 @@
     line-height: 1.62;
     color:$mainTextColor;
     margin-bottom: 20px;
-    max-width: 220px;
+    // max-width: 220px;
+    margin-right: 60px;
 
     @media screen and (min-width:768px) {
         max-width: 334px;
@@ -207,6 +217,7 @@
         line-height: 1.76;
         letter-spacing: 0.04em;
         margin-bottom: 40px;
+        margin-right: 0;
     }
 
     @media screen and (min-width:1200px) {
@@ -214,6 +225,7 @@
         font-size: 14px;
         line-height: 1.94;
         letter-spacing: 0.04em;
+        margin-right: 0;
     }
 }
 
