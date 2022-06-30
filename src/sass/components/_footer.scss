@@ -106,6 +106,8 @@
     background-color: $iconBack;
     border-radius: 50%;
 
+    transition: 350ms background-color cubic-bezier(0.19, 1, 0.22, 1); 
+
     &:hover, &:focus {
         background-color: $iconHoverBack;
     }
@@ -145,6 +147,12 @@
 }
 .footer-contacts__tel {
     color: $iconHoverBack;
+    
+    transition: 350ms color cubic-bezier(0.19, 1, 0.22, 1); 
+
+    &:hover, &:focus {
+        color: $contrastTextColor;
+    } 
 }
 
 .footer-rights {

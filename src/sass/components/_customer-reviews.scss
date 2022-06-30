@@ -150,6 +150,8 @@
     margin-right: 0px;
   }
 
+  transition: 350ms color cubic-bezier(0.19, 1, 0.22, 1); 
+  transition: 350ms background-color cubic-bezier(0.19, 1, 0.22, 1); 
   &:hover,
   &:focus {
     background-color: transparent;

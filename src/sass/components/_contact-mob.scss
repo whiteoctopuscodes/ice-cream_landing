@@ -263,8 +263,7 @@
         margin-right: 50px;
         text-decoration: none;
 
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+        transition: 350ms color cubic-bezier(0.19, 1, 0.22, 1); 
 
         &:hover,
         &:focus {      
@@ -290,8 +289,7 @@
         margin: 0;
         text-decoration: none;
 
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
+        transition: 350ms color cubic-bezier(0.19, 1, 0.22, 1); 
 
         &:hover,
         &:focus {      
@@ -357,7 +355,8 @@
             margin-bottom: 0;
             margin-right: 14.5px;
         }
-
+        transition: 350ms color cubic-bezier(0.19, 1, 0.22, 1); 
+        transition: 350ms background-color cubic-bezier(0.19, 1, 0.22, 1); 
         
     &:hover,
     &:focus {
@@ -370,6 +369,8 @@
         margin-left: 8px;
         background-size: cover;
     }
+
+    transition: 350ms fill cubic-bezier(0.19, 1, 0.22, 1); 
     &:hover &__vector,
     &:focus &__vector {      
         fill: $primaryAccentColor;
@@ -395,6 +396,9 @@
     letter-spacing: 0em;
     text-align: center;
 
+    transition: 350ms color cubic-bezier(0.19, 1, 0.22, 1); 
+    transition: 350ms background-color cubic-bezier(0.19, 1, 0.22, 1); 
+
 &:hover,
 &:focus {
     background-color: $primaryAccentColor;
@@ -405,6 +409,9 @@
     margin-left: 8px;
     background-size: contain;
 }
+
+transition: 350ms fill cubic-bezier(0.19, 1, 0.22, 1); 
+
 &:hover &__vector,
 &:focus &__vector {       
     fill: $contrastTextColor;
