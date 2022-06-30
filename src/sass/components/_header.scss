@@ -94,6 +94,8 @@
   height: 20px;
   fill: $primaryAccentColor;
 
+  transition: 350ms fill cubic-bezier(0.19, 1, 0.22, 1); 
+
   .header__menu-btn:hover &,
   .header__menu-btn:focus & {
     fill: $contrastTextColor;

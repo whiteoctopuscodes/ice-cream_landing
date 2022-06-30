@@ -303,7 +303,7 @@
     border: 1px solid transparent;
     border-radius: 50%;
 
-    transition: color $transTime $transFunction;
+    transition: 350ms background-color cubic-bezier(0.19, 1, 0.22, 1); 
 
     & .products__icon {
         fill: $primaryAccentColor;
