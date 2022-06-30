@@ -31,8 +31,7 @@
   margin-left: 10px;
 }
 .location_btn {
-  width: 161px;
-  height: 44px;
+  padding: 11px 36px;
   background-color: #d41342;
   border-radius: 22px;
   color: $contrastTextColor;
@@ -51,13 +50,16 @@
   margin-right: 15px;
 
   cursor: pointer;
+
+  transition: 350ms background-color cubic-bezier(0.19, 1, 0.22, 1); 
 }
 .location__icon {
   fill: #000;
   cursor: pointer;
+
   &:hover,
   &:focus {
-    fill: $primaryAccentColor;
+    background-color: darkorange;
   }
 }
 
@@ -82,8 +84,7 @@
 }
 
 .fr_btn {
-  width: 161px;
-  height: 44px;
+  padding: 11px 36px;
   border-radius: 22px;
   background-color: $contrastTextColor;
   color: $primaryAccentColor;
@@ -101,8 +102,11 @@
     margin-top: 10px;
   }
 
-  transition-duration: 350ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 350ms fill cubic-bezier(0.19, 1, 0.22, 1); 
+
+  &:hover, &:focus {
+    background-color: #ECEBEB;
+  }
 }
 .franchize {
   position: fixed;
