@@ -1,4 +1,20 @@
-
+.both{
+    @include ice(mobile-only){
+        display: block;
+    }
+    @include ice(tablet-only){
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+    }
+    @include ice(desktop){
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+    }
+}
 .backdrop {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
@@ -9,7 +25,11 @@
     z-index: 101;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     
+}
+.open__icon{
+    fill: #fff;
 }
 .location_btn{
     width: 161px;
@@ -25,11 +45,21 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
+    @include ice(mobile-only){
+        margin-right: auto;
+        margin-left: auto;
+    }
+    margin-right: 15px;
+    
+    cursor: pointer;
 }
-.location_icon{
-    fill: #fff;
+.location__icon{
+    fill: #000;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        fill:$primaryAccentColor;
+    }
 }
 
 .location{
@@ -56,7 +86,7 @@
     width: 161px;
     height: 44px;
     border-radius: 22px;
-    background-color: #fff;
+    background-color: $contrastTextColor;
     color: $primaryAccentColor;
     font-family: 'DM Sans';
     font-weight: 700;
@@ -66,9 +96,12 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10px;
+    @include ice(mobile-only) {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+    
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -85,8 +118,7 @@
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 700ms transform cubic-bezier(0.175, 0.885, 0.32, 1.275), 600ms opacity cubic-bezier(0.175, 0.885, 0.32, 1.275);
     @include ice(desktop){
         top: 10%;
         left: 40%;
@@ -107,36 +139,47 @@
     transform: translate(0, 0) scale(0.5);
 }
 
-.btn_close {
+.franchize__btn-close {
     position: absolute;
     top: 10px;
     right: 10px;
     background-color: transparent;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        fill: #D41342;
+    }
     
 }
 
-.btn_close__svg {
+.franchize__svg{
+    fill: $contrastTextColor;
     position: absolute;
     top: 10px;
     right: 10px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        fill: #D41342;
+    }
 }
 
 .franchise_list {
     margin-bottom: 100px;
 }
 
-.list__element {
+.franchize__item {
     &:nth-child(odd) {
         border-top: 1px solid #e18298;
         border-bottom: 1px solid #e18298;
     }
 }
 
-.list_link {
+.franchize__link {
     text-decoration: none;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -177,7 +220,7 @@
     margin-bottom: 15px;
 }
 
-.partner_btn {
+.partner__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,4 +235,9 @@
     font-size: 12px;
     line-height: 21px;
     text-transform: uppercase;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    }
 }
