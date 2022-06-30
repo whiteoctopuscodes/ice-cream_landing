@@ -37,6 +37,17 @@
   fill: #fff;
 }
 
+.buttons-loc-group {
+  @include ice(tablet-and-more) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+
+  }
+}
+
 .location_btn {
   width: 161px;
   height: 44px;
@@ -55,9 +66,13 @@
   @include ice(mobile-only) {
     margin-right: auto;
     margin-left: auto;
+    margin-top: 32px;
   }
 
-  margin-right: 15px;
+  @include ice(tablet-and-more) {
+    margin-right: 14px;
+  }
+
 
   cursor: pointer;
 }
@@ -94,8 +109,7 @@
 }
 
 .fr_btn {
-  width: 161px;
-  height: 44px;
+  padding: 11px 36px;
   border-radius: 22px;
   background-color: $contrastTextColor;
   color: $primaryAccentColor;
@@ -107,15 +121,18 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  cursor: pointer;
 
   @include ice(mobile-only) {
     margin-right: auto;
     margin-left: auto;
     margin-top: 10px;
   }
+  transition: 350ms background-color cubic-bezier(0.19, 1, 0.22, 1);
 
-     transition-duration: 350ms;
-     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  &:hover, &:focus {
+    background-color: #ECEBEB;
+  }
 
 }
 
